@@ -1,0 +1,34 @@
+# environment setup
+language: swift
+osx_image: xcode11.1
+
+# caching of dependencies
+cache:
+  bundler: true
+  
+branches:
+  only:
+    - master
+    - develop
+
+# prepare dependency managers
+before_install:
+  - brew update
+  - gem install bundler -v "$(grep -A 1 "BUNDLED WITH" Gemfile.lock | tail -n 1)"
+
+# install dependencies
+install:
+  - travis_wait carthage bootstrap --platform iOS --cache-builds
+  - bundle install
+
+# jobs and stages to run
+jobs:
+  include:
+    - stage: "Code validation"
+      name: "Code validation"
+      script:
+        - bundle exec danger
+    - stage: "Test"
+      name: "Unit tests"
+      script:
+        - bundle exec fastlane unit_test
