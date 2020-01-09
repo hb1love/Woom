@@ -29,6 +29,6 @@ jobs:
         env:
           DANGER_GITHUB_API_TOKEN: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
       - name: Run tests
-        run: bundle exec fastlane test
+        run: bundle exec fastlane unit_test
     env:
       MINT_PATH: ${{ github.workspace }}/mint
