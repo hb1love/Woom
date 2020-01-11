@@ -181,7 +181,6 @@
 				2D13D43123C64A71001C91C2 /* Sources */,
 				2D13D43223C64A71001C91C2 /* Frameworks */,
 				2D13D43323C64A71001C91C2 /* Resources */,
-				1FCE26CE7E8386121683B7C1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -248,23 +247,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1FCE26CE7E8386121683B7C1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ChatTests/Pods-ChatTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ChatTests/Pods-ChatTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChatTests/Pods-ChatTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		2D91E7EA23CA327700446794 /* Resolve ITMS-90205 */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

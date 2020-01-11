@@ -2,7 +2,7 @@
 //  ApplicationCoordinator.swift
 //  Um
 //
-//  Created by NHNEnt on 2020/01/11.
+//  Created by hb1love on 2020/01/11.
 //  Copyright © 2020 depromeet. All rights reserved.
 //
 

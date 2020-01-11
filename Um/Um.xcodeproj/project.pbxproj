@@ -10,7 +10,6 @@
 		06F4DDF266FFD20F33EC754C /* Pods_UmTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96F4CA84705EAEF317369F65 /* Pods_UmTests.framework */; };
 		2D01332D23CA113D003C3DCA /* ApplicationInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D01332C23CA113D003C3DCA /* ApplicationInjector.swift */; };
 		2D01332F23CA1156003C3DCA /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D01332E23CA1156003C3DCA /* ApplicationCoordinator.swift */; };
-		2D01333123CA1A1B003C3DCA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D01333023CA1A1B003C3DCA /* GoogleService-Info.plist */; };
 		2D13D3AE23C648A8001C91C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D13D3AD23C648A8001C91C2 /* AppDelegate.swift */; };
 		2D13D3B223C648A8001C91C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D13D3B123C648A8001C91C2 /* ViewController.swift */; };
 		2D13D3B523C648A8001C91C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D13D3B323C648A8001C91C2 /* Main.storyboard */; };
@@ -23,6 +22,7 @@
 		2D13D41D23C64A02001C91C2 /* Sharing.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D13D41B23C64A01001C91C2 /* Sharing.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2D13D44B23C64A96001C91C2 /* Chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D13D44A23C64A96001C91C2 /* Chat.framework */; };
 		2D13D44C23C64A96001C91C2 /* Chat.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D13D44A23C64A96001C91C2 /* Chat.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2D91E7EC23CA3C2E00446794 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D01333023CA1A1B003C3DCA /* GoogleService-Info.plist */; };
 		5C7CDF8E277C90E5545F0B2F /* Pods_Um.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 794682E0008EEB0C5BFE294D /* Pods_Um.framework */; };
 /* End PBXBuildFile section */
 
@@ -143,11 +143,11 @@
 			isa = PBXGroup;
 			children = (
 				2D13D3AD23C648A8001C91C2 /* AppDelegate.swift */,
+				2D01332C23CA113D003C3DCA /* ApplicationInjector.swift */,
+				2D01332E23CA1156003C3DCA /* ApplicationCoordinator.swift */,
 				2D13D3B123C648A8001C91C2 /* ViewController.swift */,
 				2D13D3B323C648A8001C91C2 /* Main.storyboard */,
 				2D13D3B823C648AA001C91C2 /* LaunchScreen.storyboard */,
-				2D01332C23CA113D003C3DCA /* ApplicationInjector.swift */,
-				2D01332E23CA1156003C3DCA /* ApplicationCoordinator.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -225,7 +225,6 @@
 				2D13D3BC23C648AA001C91C2 /* Sources */,
 				2D13D3BD23C648AA001C91C2 /* Frameworks */,
 				2D13D3BE23C648AA001C91C2 /* Resources */,
-				991716C210B4475F6916A723 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -281,7 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D13D3BA23C648AA001C91C2 /* LaunchScreen.storyboard in Resources */,
-				2D01333123CA1A1B003C3DCA /* GoogleService-Info.plist in Resources */,
+				2D91E7EC23CA3C2E00446794 /* GoogleService-Info.plist in Resources */,
 				2D13D3B723C648AA001C91C2 /* Assets.xcassets in Resources */,
 				2D13D3B523C648A8001C91C2 /* Main.storyboard in Resources */,
 			);
@@ -374,23 +373,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		991716C210B4475F6916A723 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-UmTests/Pods-UmTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-UmTests/Pods-UmTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UmTests/Pods-UmTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

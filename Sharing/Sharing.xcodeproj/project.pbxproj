@@ -181,7 +181,6 @@
 				2D13D40623C649D7001C91C2 /* Sources */,
 				2D13D40723C649D7001C91C2 /* Frameworks */,
 				2D13D40823C649D7001C91C2 /* Resources */,
-				1F97BCD702C6907113F93992 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -248,23 +247,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1F97BCD702C6907113F93992 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SharingTests/Pods-SharingTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SharingTests/Pods-SharingTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SharingTests/Pods-SharingTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		2D91E7E923CA326400446794 /* Resolve ITMS-90205 */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
