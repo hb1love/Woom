@@ -12,6 +12,7 @@ def common
 
   # SDK
   pod 'Firebase/Core'
+  pod 'Firebase/Analytics'
   pod 'Fabric'
   pod 'Crashlytics'
 end
