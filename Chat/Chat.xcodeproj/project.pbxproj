@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -162,6 +162,7 @@
 				2D13D42923C64A71001C91C2 /* Frameworks */,
 				2D13D42A23C64A71001C91C2 /* Resources */,
 				2D13D44923C64A8F001C91C2 /* Embed Frameworks */,
+				2D91E7EA23CA327700446794 /* Resolve ITMS-90205 */,
 			);
 			buildRules = (
 			);
@@ -263,6 +264,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChatTests/Pods-ChatTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		2D91E7EA23CA327700446794 /* Resolve ITMS-90205 */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Resolve ITMS-90205";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\"\nif [[ -d \"Frameworks\" ]]; then \n    rm -fr Frameworks\nfi\n";
 		};
 		3DA1624D0D2B0F2E3F6CA456 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
