@@ -32,6 +32,7 @@ enum LaunchInstructor {
 
 final class ApplicationCoordinator: BaseCoordinator {
 
+  private let mainCoordinatorFactor: MainCoordinatorFactoryProtocol
   private let shareCoordinatorFactory: ShareCoordinatorFactoryProtocol
   private let router: Routable
 
@@ -40,9 +41,11 @@ final class ApplicationCoordinator: BaseCoordinator {
   }
 
   init(
+    mainCoordinatorFactor: MainCoordinatorFactoryProtocol,
     shareCoordinatorFactory: ShareCoordinatorFactoryProtocol,
     router: Routable
     ) {
+    self.mainCoordinatorFactor = mainCoordinatorFactor
     self.shareCoordinatorFactory = shareCoordinatorFactory
     self.router = router
   }
@@ -54,6 +57,7 @@ final class ApplicationCoordinator: BaseCoordinator {
 //    case .onboarding: runOnboardingFlow()
 //    case .main: runMainFlow()
 //    }
+    runMainFlow()
   }
 
 //  private func runLaunchFlow() {
@@ -91,13 +95,13 @@ final class ApplicationCoordinator: BaseCoordinator {
 //    coordinator.start()
 //  }
 //
-//  private func runMainFlow() {
-//    let coordinator = coordinatorFactory.makeMainCoordinator(router: router)
-//    coordinator.finishFlow = { [weak self, weak coordinator] in
-//      self?.start()
-//      self?.removeDependency(coordinator)
-//    }
-//    addDependency(coordinator)
-//    coordinator.start()
-//  }
+  private func runMainFlow() {
+    let coordinator = mainCoordinatorFactor.makeMainCoordinator(router: router)
+    coordinator.finishFlow = { [weak self, weak coordinator] in
+      self?.start()
+      self?.removeDependency(coordinator)
+    }
+    addDependency(coordinator)
+    coordinator.start()
+  }
 }

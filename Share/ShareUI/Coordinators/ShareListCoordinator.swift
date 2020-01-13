@@ -6,18 +6,20 @@
 //  Copyright © 2020 depromeet. All rights reserved.
 //
 
+import UIKit
 import Common
 
 public protocol ShareListCoordinatorOutput: AnyObject {
   var finishFlow: (() -> Void)? { get set }
 }
 
-public final class ShareListCoordinator: BaseCoordinator, ShareListCoordinatorOutput {
+public final class ShareListCoordinator: BaseCoordinator, ShareListCoordinatorOutput, RootCoordinator {
 
   public var finishFlow: (() -> Void)?
   private let coordinatorFactory: ShareCoordinatorFactoryProtocol
   private let moduleFactory: ShareListModuleFactoryType
   private let router: Routable
+  public let rootViewController: UINavigationController
 
   init(
     coordinatorFactory: ShareCoordinatorFactoryProtocol,
@@ -27,10 +29,17 @@ public final class ShareListCoordinator: BaseCoordinator, ShareListCoordinatorOu
     self.coordinatorFactory = coordinatorFactory
     self.moduleFactory = moduleFactory
     self.router = router
+    self.rootViewController = router.rootController
   }
 
   public override func start() {
-//    showWelcome()
+    showList()
+  }
+
+  private func showList() {
+    let listModule = moduleFactory.makeShareListModule()
+
+    router.setRoot(listModule)
   }
 
 //  private func showWelcome() {

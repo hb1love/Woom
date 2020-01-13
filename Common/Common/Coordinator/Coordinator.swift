@@ -12,7 +12,7 @@ public protocol Coordinator: AnyObject {
   func start()
 }
 
-extension Coordinator {
+public extension Coordinator {
 
   func addDependency(_ coordinator: Coordinator) {
     guard childCoordinators.contains(where: { $0 === coordinator }) == false else { return }

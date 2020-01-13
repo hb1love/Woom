@@ -16,6 +16,7 @@
 		2D2BBBE923CC9CC30052394B /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2BBBE823CC9CC30052394B /* Presentable.swift */; };
 		2D2BBBEB23CC9D020052394B /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2BBBEA23CC9D020052394B /* Router.swift */; };
 		2D2BBBED23CC9D110052394B /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2BBBEC23CC9D110052394B /* Routable.swift */; };
+		2D7795D223CCD9C8005B84A9 /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7795D123CCD9C8005B84A9 /* RootCoordinator.swift */; };
 		2F85605774E66C3F87F7C034 /* Pods_CommonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0908EA7CCB176F760B2A8C69 /* Pods_CommonTests.framework */; };
 		7546560B8D779D6F582A1B6B /* Pods_Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9CE4BA7C05ABE333EEFFE4D /* Pods_Common.framework */; };
 /* End PBXBuildFile section */
@@ -44,6 +45,7 @@
 		2D2BBBE823CC9CC30052394B /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
 		2D2BBBEA23CC9D020052394B /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		2D2BBBEC23CC9D110052394B /* Routable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
+		2D7795D123CCD9C8005B84A9 /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
 		7941F0A67997E3927C3B58DD /* Pods-Common.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Common.debug.xcconfig"; path = "Target Support Files/Pods-Common/Pods-Common.debug.xcconfig"; sourceTree = "<group>"; };
 		7CBB943B94BACD627743DE7B /* Pods-CommonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonTests.debug.xcconfig"; path = "Target Support Files/Pods-CommonTests/Pods-CommonTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8F177B9C1233F9301D82476B /* Pods-CommonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonTests.release.xcconfig"; path = "Target Support Files/Pods-CommonTests/Pods-CommonTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 			children = (
 				2D2BBBE323CC9C890052394B /* Coordinator.swift */,
 				2D2BBBE523CC9CAA0052394B /* BaseCoordinator.swift */,
+				2D7795D123CCD9C8005B84A9 /* RootCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				2D2BBBED23CC9D110052394B /* Routable.swift in Sources */,
 				2D2BBBE923CC9CC30052394B /* Presentable.swift in Sources */,
 				2D2BBBEB23CC9D020052394B /* Router.swift in Sources */,
+				2D7795D223CCD9C8005B84A9 /* RootCoordinator.swift in Sources */,
 				2D2BBBE623CC9CAA0052394B /* BaseCoordinator.swift in Sources */,
 				2D2BBBE023CC9C310052394B /* Logger.swift in Sources */,
 			);

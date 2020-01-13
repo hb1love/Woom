@@ -6,9 +6,10 @@
 //  Copyright © 2020 depromeet. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 public protocol Routable: Presentable {
+  var rootController: UINavigationController { get }
 
   func present(_ module: Presentable?, animated: Bool)
 

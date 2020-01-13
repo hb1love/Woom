@@ -10,7 +10,7 @@ import UIKit
 
 public final class Router: NSObject, Routable {
 
-  private var rootController: UINavigationController?
+  private(set) public var rootController: UINavigationController
   private var completions: [UIViewController: () -> Void]
 
   public init(rootController: UINavigationController) {
@@ -24,11 +24,11 @@ public final class Router: NSObject, Routable {
 
   public func present(_ module: Presentable?, animated: Bool) {
     guard let controller = module?.toPresent() else { return }
-    rootController?.present(controller, animated: animated, completion: nil)
+    rootController.present(controller, animated: animated, completion: nil)
   }
 
   public func dismiss(animated: Bool, completion: (() -> Void)?) {
-    rootController?.dismiss(animated: animated, completion: completion)
+    rootController.dismiss(animated: animated, completion: completion)
   }
 
   public func push(
@@ -47,22 +47,22 @@ public final class Router: NSObject, Routable {
     if let completion = completion {
       completions[controller] = completion
     }
-    rootController?.pushViewController(controller, animated: animated)
+    rootController.pushViewController(controller, animated: animated)
   }
 
   public func pop(animated: Bool) {
-    if let controller = rootController?.popViewController(animated: animated) {
+    if let controller = rootController.popViewController(animated: animated) {
       runCompletion(for: controller)
     }
   }
 
   public func setRoot(_ module: Presentable?) {
     guard let controller = module?.toPresent() else { return }
-    rootController?.setViewControllers([controller], animated: false)
+    rootController.setViewControllers([controller], animated: false)
   }
 
   public func popToRoot(animated: Bool) {
-    if let controllers = rootController?.popToRootViewController(animated: animated) {
+    if let controllers = rootController.popToRootViewController(animated: animated) {
       controllers.forEach { controller in
         runCompletion(for: controller)
       }

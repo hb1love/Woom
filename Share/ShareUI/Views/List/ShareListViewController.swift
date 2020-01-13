@@ -10,5 +10,12 @@ import UIKit
 import Common
 
 public final class ShareListViewController: UIViewController {
-  
+  public override func viewDidLoad() {
+    super.viewDidLoad()
+
+    let a = UIView()
+    a.backgroundColor = .blue
+    a.frame = view.frame
+    view.addSubview(a)
+  }
 }

@@ -13,5 +13,5 @@ public protocol ShareCoordinatorFactoryProtocol {
     Coordinator & ShareEditCoordinatorOutput
 
   func makeListCoordinator(router: Routable) ->
-    Coordinator & ShareListCoordinatorOutput
+    RootCoordinator & ShareListCoordinatorOutput
 }

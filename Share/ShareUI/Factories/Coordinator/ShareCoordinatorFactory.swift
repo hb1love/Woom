@@ -23,7 +23,8 @@ public final class ShareCoordinatorFactory: ShareCoordinatorFactoryProtocol {
     )
   }
 
-  public func makeListCoordinator(router: Routable) -> Coordinator & ShareListCoordinatorOutput {
+  public func makeListCoordinator(router: Routable)
+    -> RootCoordinator & ShareListCoordinatorOutput {
     return ShareListCoordinator(
       coordinatorFactory: self,
       moduleFactory: moduleFactory,

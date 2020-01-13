@@ -6,12 +6,34 @@
 //  Copyright © 2020 depromeet. All rights reserved.
 //
 
+import UIKit
+import Common
 import ShareUI
 import ShareService
+
+enum ServiceType: String, CaseIterable {
+  case home
+  case share
+  case chat
+  case account
+}
 
 struct ApplicationConfiguration:
   ShareUIConfiguration,
   ShareServiceConfiguration {
+
+  static let root: UINavigationController = {
+    return UINavigationController()
+  }()
+
+  static let serviceMap: [ServiceType: RootCoordinator]
+    = [.home: shareCoordinatorFactory.makeListCoordinator(router: Router(rootController: root))]
+//  ,
+//       .share: shareCoordinatorFactory.makeEditCoordinator(router: Router(rootController: root))]
+
+  static let mainCoordinatorFactory = MainCoordinatorFactory(
+    moduleFactory: MainModuleFactory(serviceMap: serviceMap)
+  )
 
   static let shareCoordinatorFactory = ShareUIInjector.resolve(
     with: ApplicationConfiguration.self

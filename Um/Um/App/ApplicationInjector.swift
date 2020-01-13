@@ -29,6 +29,7 @@ struct ApplicationInjector {
     window.makeKeyAndVisible()
 
     let coordinator = ApplicationCoordinator(
+      mainCoordinatorFactor: ApplicationConfiguration.mainCoordinatorFactory,
       shareCoordinatorFactory: ApplicationConfiguration.shareCoordinatorFactory,
       router: Router(rootController: rootController)
     )
