@@ -18,11 +18,19 @@
 		2D13D3C523C648AA001C91C2 /* UmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D13D3C423C648AA001C91C2 /* UmTests.swift */; };
 		2D13D3F423C649A4001C91C2 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D13D3F323C649A4001C91C2 /* Common.framework */; };
 		2D13D3F523C649A4001C91C2 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D13D3F323C649A4001C91C2 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2D13D41C23C64A02001C91C2 /* Sharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D13D41B23C64A01001C91C2 /* Sharing.framework */; };
-		2D13D41D23C64A02001C91C2 /* Sharing.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D13D41B23C64A01001C91C2 /* Sharing.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2D13D44B23C64A96001C91C2 /* Chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D13D44A23C64A96001C91C2 /* Chat.framework */; };
 		2D13D44C23C64A96001C91C2 /* Chat.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D13D44A23C64A96001C91C2 /* Chat.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2D2BBC2723CCC0AF0052394B /* ShareService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2BBC2523CCC0AE0052394B /* ShareService.framework */; };
+		2D2BBC2823CCC0AF0052394B /* ShareService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2BBC2523CCC0AE0052394B /* ShareService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2D2BBC2923CCC0AF0052394B /* ShareUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2BBC2623CCC0AF0052394B /* ShareUI.framework */; };
+		2D2BBC2A23CCC0AF0052394B /* ShareUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2BBC2623CCC0AF0052394B /* ShareUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2D2BBC2C23CCC27B0052394B /* ApplicationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2BBC2B23CCC27B0052394B /* ApplicationConfiguration.swift */; };
+		2D2BBC3223CCC46D0052394B /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2BBC3123CCC46D0052394B /* MainTabBarController.swift */; };
 		2D91E7EC23CA3C2E00446794 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D01333023CA1A1B003C3DCA /* GoogleService-Info.plist */; };
+		2DD4294623CC98A900544117 /* Share.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD4294523CC98A900544117 /* Share.framework */; };
+		2DD4294723CC98A900544117 /* Share.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD4294523CC98A900544117 /* Share.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2DD4297223CC995A00544117 /* Account.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD4297123CC995A00544117 /* Account.framework */; };
+		2DD4297323CC995A00544117 /* Account.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD4297123CC995A00544117 /* Account.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5C7CDF8E277C90E5545F0B2F /* Pods_Um.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 794682E0008EEB0C5BFE294D /* Pods_Um.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,9 +51,12 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				2D2BBC2823CCC0AF0052394B /* ShareService.framework in Embed Frameworks */,
 				2D13D44C23C64A96001C91C2 /* Chat.framework in Embed Frameworks */,
+				2DD4294723CC98A900544117 /* Share.framework in Embed Frameworks */,
+				2DD4297323CC995A00544117 /* Account.framework in Embed Frameworks */,
+				2D2BBC2A23CCC0AF0052394B /* ShareUI.framework in Embed Frameworks */,
 				2D13D3F523C649A4001C91C2 /* Common.framework in Embed Frameworks */,
-				2D13D41D23C64A02001C91C2 /* Sharing.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,8 +78,13 @@
 		2D13D3C423C648AA001C91C2 /* UmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UmTests.swift; sourceTree = "<group>"; };
 		2D13D3C623C648AA001C91C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D13D3F323C649A4001C91C2 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D13D41B23C64A01001C91C2 /* Sharing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Sharing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D13D44A23C64A96001C91C2 /* Chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D2BBC2523CCC0AE0052394B /* ShareService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ShareService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D2BBC2623CCC0AF0052394B /* ShareUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ShareUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D2BBC2B23CCC27B0052394B /* ApplicationConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationConfiguration.swift; sourceTree = "<group>"; };
+		2D2BBC3123CCC46D0052394B /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		2DD4294523CC98A900544117 /* Share.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Share.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DD4297123CC995A00544117 /* Account.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Account.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		794682E0008EEB0C5BFE294D /* Pods_Um.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Um.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		858ABA52857DBE0F5CBF4D4D /* Pods-UmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UmTests.release.xcconfig"; path = "Target Support Files/Pods-UmTests/Pods-UmTests.release.xcconfig"; sourceTree = "<group>"; };
 		96F4CA84705EAEF317369F65 /* Pods_UmTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UmTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,9 +98,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D2BBC2923CCC0AF0052394B /* ShareUI.framework in Frameworks */,
+				2D2BBC2723CCC0AF0052394B /* ShareService.framework in Frameworks */,
+				2DD4297223CC995A00544117 /* Account.framework in Frameworks */,
 				2D13D3F423C649A4001C91C2 /* Common.framework in Frameworks */,
 				2D13D44B23C64A96001C91C2 /* Chat.framework in Frameworks */,
-				2D13D41C23C64A02001C91C2 /* Sharing.framework in Frameworks */,
+				2DD4294623CC98A900544117 /* Share.framework in Frameworks */,
 				5C7CDF8E277C90E5545F0B2F /* Pods_Um.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -109,7 +128,9 @@
 				334D72B85F7C7216195B9731 /* Frameworks */,
 				37F8AB0370B05962E168A95C /* Pods */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		2D13D3AB23C648A8001C91C2 /* Products */ = {
 			isa = PBXGroup;
@@ -139,15 +160,57 @@
 			path = UmTests;
 			sourceTree = "<group>";
 		};
+		2D2BBC2D23CCC3E60052394B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2D2BBC2E23CCC4150052394B /* Coordinators */,
+				2D2BBC2F23CCC4230052394B /* Views */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		2D2BBC2E23CCC4150052394B /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		2D2BBC2F23CCC4230052394B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2D13D3B123C648A8001C91C2 /* ViewController.swift */,
+				2D2BBC3323CCC4C10052394B /* Launch */,
+				2D2BBC3023CCC42E0052394B /* Main */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2D2BBC3023CCC42E0052394B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2D13D3B323C648A8001C91C2 /* Main.storyboard */,
+				2D2BBC3123CCC46D0052394B /* MainTabBarController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		2D2BBC3323CCC4C10052394B /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				2D13D3B823C648AA001C91C2 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
 		2D3F99BF23C9F7CB007A4863 /* App */ = {
 			isa = PBXGroup;
 			children = (
 				2D13D3AD23C648A8001C91C2 /* AppDelegate.swift */,
 				2D01332C23CA113D003C3DCA /* ApplicationInjector.swift */,
 				2D01332E23CA1156003C3DCA /* ApplicationCoordinator.swift */,
-				2D13D3B123C648A8001C91C2 /* ViewController.swift */,
-				2D13D3B323C648A8001C91C2 /* Main.storyboard */,
-				2D13D3B823C648AA001C91C2 /* LaunchScreen.storyboard */,
+				2D2BBC2B23CCC27B0052394B /* ApplicationConfiguration.swift */,
+				2D2BBC2D23CCC3E60052394B /* UI */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -172,8 +235,11 @@
 		334D72B85F7C7216195B9731 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2D2BBC2523CCC0AE0052394B /* ShareService.framework */,
+				2D2BBC2623CCC0AF0052394B /* ShareUI.framework */,
+				2DD4297123CC995A00544117 /* Account.framework */,
+				2DD4294523CC98A900544117 /* Share.framework */,
 				2D13D44A23C64A96001C91C2 /* Chat.framework */,
-				2D13D41B23C64A01001C91C2 /* Sharing.framework */,
 				2D13D3F323C649A4001C91C2 /* Common.framework */,
 				794682E0008EEB0C5BFE294D /* Pods_Um.framework */,
 				96F4CA84705EAEF317369F65 /* Pods_UmTests.framework */,
@@ -383,6 +449,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D01332F23CA1156003C3DCA /* ApplicationCoordinator.swift in Sources */,
+				2D2BBC2C23CCC27B0052394B /* ApplicationConfiguration.swift in Sources */,
+				2D2BBC3223CCC46D0052394B /* MainTabBarController.swift in Sources */,
 				2D13D3B223C648A8001C91C2 /* ViewController.swift in Sources */,
 				2D13D3AE23C648A8001C91C2 /* AppDelegate.swift in Sources */,
 				2D01332D23CA113D003C3DCA /* ApplicationInjector.swift in Sources */,
