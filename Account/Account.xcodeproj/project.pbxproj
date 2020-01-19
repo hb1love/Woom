@@ -35,6 +35,12 @@
 		2D095A9223D4A97400EA2161 /* UserServiceInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D095A2423D4490800EA2161 /* UserServiceInjector.swift */; };
 		2D095A9323D4AE3A00EA2161 /* AuthService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D095A3123D44AD800EA2161 /* AuthService.framework */; };
 		2D095A9423D4AE3A00EA2161 /* AuthService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D095A3123D44AD800EA2161 /* AuthService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2D095AA823D4C63900EA2161 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D095AA723D4C63900EA2161 /* Common.framework */; };
+		2D095AA923D4C63900EA2161 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D095AA723D4C63900EA2161 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2D095AAC23D4C6E500EA2161 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D095AAB23D4C6E500EA2161 /* Common.framework */; };
+		2D095AAD23D4C6E500EA2161 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D095AAB23D4C6E500EA2161 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2D095AAF23D4C71300EA2161 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D095AAE23D4C71300EA2161 /* Common.framework */; };
+		2D095AB023D4C71300EA2161 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D095AAE23D4C71300EA2161 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2DD4296023CC990100544117 /* Account.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD4295623CC990100544117 /* Account.framework */; };
 		2DD4296523CC990100544117 /* AccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD4296423CC990100544117 /* AccountTests.swift */; };
 		2DD4296723CC990100544117 /* Account.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DD4295923CC990100544117 /* Account.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -95,6 +101,29 @@
 			dstSubfolderSpec = 10;
 			files = (
 				2D095A9423D4AE3A00EA2161 /* AuthService.framework in Embed Frameworks */,
+				2D095AAD23D4C6E500EA2161 /* Common.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D095AAA23D4C63900EA2161 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2D095AA923D4C63900EA2161 /* Common.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D095AB123D4C71300EA2161 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2D095AB023D4C71300EA2161 /* Common.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,6 +180,9 @@
 		2D095A8B23D4A4DF00EA2161 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2D095A8E23D4A6B500EA2161 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		2D095A9023D4A6C700EA2161 /* UserDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataSource.swift; sourceTree = "<group>"; };
+		2D095AA723D4C63900EA2161 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D095AAB23D4C6E500EA2161 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D095AAE23D4C71300EA2161 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DD4295623CC990100544117 /* Account.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Account.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DD4295923CC990100544117 /* Account.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
 		2DD4295A23CC990100544117 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -192,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				901DED7B0E46AA80B29E6EED /* Pods_AccountUI.framework in Frameworks */,
+				2D095AAF23D4C71300EA2161 /* Common.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6960BEC9BC1EDBC35352238E /* Pods_AuthService.framework in Frameworks */,
+				2D095AA823D4C63900EA2161 /* Common.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +259,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D095AAC23D4C6E500EA2161 /* Common.framework in Frameworks */,
 				2D095A9323D4AE3A00EA2161 /* AuthService.framework in Frameworks */,
 				491BEDAF44EB219A663C3EA3 /* Pods_UserService.framework in Frameworks */,
 			);
@@ -291,6 +326,9 @@
 		1F41311B82EDA6A3BA57A4F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2D095AAE23D4C71300EA2161 /* Common.framework */,
+				2D095AAB23D4C6E500EA2161 /* Common.framework */,
+				2D095AA723D4C63900EA2161 /* Common.framework */,
 				2DD4297423CC997000544117 /* Common.framework */,
 				4F37AF588D6E2894095EC08C /* Pods_Account.framework */,
 				A621A0B7E9B458A15EE1C8B1 /* Pods_AccountTests.framework */,
@@ -571,6 +609,7 @@
 				2D095A0523D4485800EA2161 /* Sources */,
 				2D095A0623D4485800EA2161 /* Frameworks */,
 				2D095A0723D4485800EA2161 /* Resources */,
+				2D095AB123D4C71300EA2161 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -609,6 +648,7 @@
 				2D095A2D23D44AD800EA2161 /* Sources */,
 				2D095A2E23D44AD800EA2161 /* Frameworks */,
 				2D095A2F23D44AD800EA2161 /* Resources */,
+				2D095AAA23D4C63900EA2161 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
