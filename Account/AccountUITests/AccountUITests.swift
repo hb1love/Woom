@@ -2,7 +2,7 @@
 //  AccountUITests.swift
 //  AccountUITests
 //
-//  Created by NHNEnt on 2020/01/19.
+//  Created by hb1love on 2020/01/19.
 //  Copyright © 2020 depromeet. All rights reserved.
 //
 

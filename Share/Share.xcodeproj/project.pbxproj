@@ -13,6 +13,8 @@
 		2D0959E723D4436F00EA2161 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0959E623D4436F00EA2161 /* Post.swift */; };
 		2D095A9923D4AEF700EA2161 /* AuthService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D095A9823D4AEF700EA2161 /* AuthService.framework */; };
 		2D095A9A23D4AEF700EA2161 /* AuthService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D095A9823D4AEF700EA2161 /* AuthService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2D095AA423D4B9AA00EA2161 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D095AA323D4B9AA00EA2161 /* PostView.swift */; };
+		2D095AA623D4BB4200EA2161 /* ShareListViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D095AA523D4BB4200EA2161 /* ShareListViewReactor.swift */; };
 		2D2BBBCF23CC9BE90052394B /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2BBBCE23CC9BE90052394B /* Common.framework */; };
 		2D2BBBD023CC9BE90052394B /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2BBBCE23CC9BE90052394B /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2D2BBBD323CC9BEF0052394B /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2BBBD223CC9BEF0052394B /* Common.framework */; };
@@ -146,6 +148,8 @@
 		096351F5888DB00AEF7D8851 /* Pods_ShareServiceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShareServiceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D0959E623D4436F00EA2161 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		2D095A9823D4AEF700EA2161 /* AuthService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AuthService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D095AA323D4B9AA00EA2161 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		2D095AA523D4BB4200EA2161 /* ShareListViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareListViewReactor.swift; sourceTree = "<group>"; };
 		2D2BBBCE23CC9BE90052394B /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D2BBBD223CC9BEF0052394B /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D2BBBF223CC9DFF0052394B /* ShareService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareService.swift; sourceTree = "<group>"; };
@@ -264,6 +268,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D095AA223D4B93700EA2161 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2D095AA323D4B9AA00EA2161 /* PostView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		2D2BBBEE23CC9D920052394B /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
@@ -338,6 +350,7 @@
 		2D2BBC0323CCA3CC0052394B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2D095AA223D4B93700EA2161 /* Common */,
 				2D2BBC0523CCA4B20052394B /* Edit */,
 				2D2BBC0423CCA4AD0052394B /* List */,
 			);
@@ -348,6 +361,7 @@
 			isa = PBXGroup;
 			children = (
 				2D2BBC0623CCA4C10052394B /* ShareListViewController.swift */,
+				2D095AA523D4BB4200EA2161 /* ShareListViewReactor.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -973,6 +987,7 @@
 				2D2BBC0B23CCA4FC0052394B /* ShareEditViewController.swift in Sources */,
 				2D2BBC2423CCBEF40052394B /* ShareUIInjector.swift in Sources */,
 				2D2BBC0F23CCA5DC0052394B /* ShareCoordinatorFactoryProtocol.swift in Sources */,
+				2D095AA623D4BB4200EA2161 /* ShareListViewReactor.swift in Sources */,
 				2D2BBC1D23CCAA9A0052394B /* ShareListCoordinator.swift in Sources */,
 				2D2BBC0723CCA4C10052394B /* ShareListViewController.swift in Sources */,
 				2D2BBC0D23CCA5AE0052394B /* ShareCoordinatorFactory.swift in Sources */,
@@ -980,6 +995,7 @@
 				2D2BBC1723CCA7FF0052394B /* ShareEditModuleFactoryType.swift in Sources */,
 				2D2BBC1223CCA68A0052394B /* ShareEditCoordinator.swift in Sources */,
 				2D2BBC1923CCA8130052394B /* ShareListModuleFactoryType.swift in Sources */,
+				2D095AA423D4B9AA00EA2161 /* PostView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,8 +8,10 @@
 
 import UIKit
 import Common
+import ReactorKit
 
-public final class ShareListViewController: UIViewController {
+public final class ShareListViewController: BaseViewController, View {
+  
   public override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -17,5 +19,9 @@ public final class ShareListViewController: UIViewController {
     a.backgroundColor = .blue
     a.frame = view.frame
     view.addSubview(a)
+  }
+
+  public func bind(reactor: ShareListViewReactor) {
+
   }
 }

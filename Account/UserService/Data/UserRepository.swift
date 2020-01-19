@@ -2,7 +2,7 @@
 //  UserRepository.swift
 //  UserService
 //
-//  Created by NHNEnt on 2020/01/20.
+//  Created by hb1love on 2020/01/20.
 //  Copyright © 2020 depromeet. All rights reserved.
 //
 

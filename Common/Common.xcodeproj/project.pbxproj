@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		2D0959E223D43A6200EA2161 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0959E123D43A6200EA2161 /* Networking.swift */; };
 		2D0959E523D43B0F00EA2161 /* UmError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0959E423D43B0F00EA2161 /* UmError.swift */; };
+		2D095A9D23D4B5AA00EA2161 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D095A9C23D4B5AA00EA2161 /* BaseViewController.swift */; };
+		2D095A9F23D4B6D800EA2161 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D095A9E23D4B6D800EA2161 /* BaseView.swift */; };
+		2D095AA123D4B78100EA2161 /* BaseTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D095AA023D4B78100EA2161 /* BaseTableView.swift */; };
 		2D13D3E323C64976001C91C2 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D13D3D923C64976001C91C2 /* Common.framework */; };
 		2D13D3E823C64976001C91C2 /* CommonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D13D3E723C64976001C91C2 /* CommonTests.swift */; };
 		2D13D3EA23C64976001C91C2 /* Common.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D13D3DC23C64976001C91C2 /* Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -48,6 +51,9 @@
 		0908EA7CCB176F760B2A8C69 /* Pods_CommonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D0959E123D43A6200EA2161 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		2D0959E423D43B0F00EA2161 /* UmError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UmError.swift; sourceTree = "<group>"; };
+		2D095A9C23D4B5AA00EA2161 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		2D095A9E23D4B6D800EA2161 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		2D095AA023D4B78100EA2161 /* BaseTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableView.swift; sourceTree = "<group>"; };
 		2D13D3D923C64976001C91C2 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D13D3DC23C64976001C91C2 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		2D13D3DD23C64976001C91C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -116,6 +122,16 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		2D095A9B23D4B57F00EA2161 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2D095A9E23D4B6D800EA2161 /* BaseView.swift */,
+				2D095A9C23D4B5AA00EA2161 /* BaseViewController.swift */,
+				2D095AA023D4B78100EA2161 /* BaseTableView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		2D13D3CF23C64976001C91C2 = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +166,7 @@
 				2D75327823D42BE000E94D78 /* Protocols */,
 				2D2BBBE723CC9CB60052394B /* Router */,
 				2D75327523D42BDF00E94D78 /* Utils */,
+				2D095A9B23D4B57F00EA2161 /* View */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -444,9 +461,12 @@
 				2D75328223D42BE000E94D78 /* DateExtension.swift in Sources */,
 				2D75328323D42BE000E94D78 /* ImageLoader.swift in Sources */,
 				2D75327C23D42BE000E94D78 /* UIButtonExtension.swift in Sources */,
+				2D095A9D23D4B5AA00EA2161 /* BaseViewController.swift in Sources */,
+				2D095AA123D4B78100EA2161 /* BaseTableView.swift in Sources */,
 				2D75327D23D42BE000E94D78 /* CalendarExtension.swift in Sources */,
 				2D75328023D42BE000E94D78 /* UITableViewExtension.swift in Sources */,
 				2D75327E23D42BE000E94D78 /* IntExtension.swift in Sources */,
+				2D095A9F23D4B6D800EA2161 /* BaseView.swift in Sources */,
 				2D2BBBED23CC9D110052394B /* Routable.swift in Sources */,
 				2D75328423D42BE000E94D78 /* Vibration.swift in Sources */,
 				2D2BBBE923CC9CC30052394B /* Presentable.swift in Sources */,
