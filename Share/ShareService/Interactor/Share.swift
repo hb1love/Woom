@@ -6,6 +6,8 @@
 //  Copyright © 2020 depromeet. All rights reserved.
 //
 
-public protocol Share {
+import RxSwift
 
+public protocol Share {
+  func feeds() -> Single<[Post]>
 }

@@ -30,7 +30,9 @@ public final class ShareServiceInjector {
     ShareServiceConfig.shared = ShareServiceConfig(config)
     return ShareService(
       share: ShareRepository(
-        remote: ShareRemoteDataSource()
+        remote: ShareRemoteDataSource(
+          networking: ShareNetworking()
+        )
       )
     )
   }

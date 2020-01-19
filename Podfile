@@ -111,6 +111,7 @@ target 'Common' do
   project 'Common/Common'
   common
   rx
+  networking
 
   target 'CommonTests' do
     inherit! :search_paths

@@ -6,8 +6,10 @@
 //  Copyright © 2020 depromeet. All rights reserved.
 //
 
-public protocol ShareUseCase {
+import RxSwift
 
+public protocol ShareUseCase {
+  func feeds() -> Single<[Post]>
 }
 
 public final class ShareService: ShareUseCase {
@@ -18,4 +20,7 @@ public final class ShareService: ShareUseCase {
     self.share = share
   }
 
+  public func feeds() -> Single<[Post]> {
+    share.feeds()
+  }
 }

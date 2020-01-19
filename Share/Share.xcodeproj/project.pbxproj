@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0185E49CD58BA890AEE6D7AC /* Pods_ShareUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F346C28732C799A811AC99FD /* Pods_ShareUI.framework */; };
+		2D0959DC23D4385D00EA2161 /* ShareService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD4298A23CC99D900544117 /* ShareService.framework */; };
+		2D0959DD23D4385D00EA2161 /* ShareService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD4298A23CC99D900544117 /* ShareService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2D0959E723D4436F00EA2161 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0959E623D4436F00EA2161 /* Post.swift */; };
 		2D2BBBCF23CC9BE90052394B /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2BBBCE23CC9BE90052394B /* Common.framework */; };
 		2D2BBBD023CC9BE90052394B /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2BBBCE23CC9BE90052394B /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2D2BBBD323CC9BEF0052394B /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2BBBD223CC9BEF0052394B /* Common.framework */; };
@@ -45,12 +48,20 @@
 		2DD429B423CC9A0100544117 /* ShareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD429B323CC9A0100544117 /* ShareUITests.swift */; };
 		2DD429B623CC9A0100544117 /* ShareUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DD429A823CC9A0100544117 /* ShareUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		32D3AE32332AD1067F8711BB /* Pods_ShareService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51B2907FDDB52A47CA7C4F82 /* Pods_ShareService.framework */; };
+		76C1121D8A381DBC25AB9D65 /* Pods_ShareUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A625F42AA44A0FE24AF157 /* Pods_ShareUITests.framework */; };
 		9CFEB61FDC8418B1CB2A935D /* Pods_ShareServiceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 096351F5888DB00AEF7D8851 /* Pods_ShareServiceTests.framework */; };
 		B5B0C8A4B60B35ACA1BCADFB /* Pods_ShareTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DBB9A49D8E2926D9297CD49 /* Pods_ShareTests.framework */; };
 		DCB3A774002242A4BA2097A1 /* Pods_Share.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B9DDA911A384DCBB3C274F /* Pods_Share.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2D0959DE23D4385D00EA2161 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DD4292123CC982E00544117 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DD4298923CC99D900544117;
+			remoteInfo = ShareService;
+		};
 		2D2BBBD823CC9C050052394B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2DD4292123CC982E00544117 /* Project object */;
@@ -95,6 +106,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				2D0959DD23D4385D00EA2161 /* ShareService.framework in Embed Frameworks */,
 				2D2BBBD023CC9BE90052394B /* Common.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -129,6 +141,7 @@
 /* Begin PBXFileReference section */
 		08AAC813F756F47074605D70 /* Pods-ShareService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareService.release.xcconfig"; path = "Target Support Files/Pods-ShareService/Pods-ShareService.release.xcconfig"; sourceTree = "<group>"; };
 		096351F5888DB00AEF7D8851 /* Pods_ShareServiceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShareServiceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D0959E623D4436F00EA2161 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		2D2BBBCE23CC9BE90052394B /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D2BBBD223CC9BEF0052394B /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D2BBBF223CC9DFF0052394B /* ShareService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareService.swift; sourceTree = "<group>"; };
@@ -174,9 +187,12 @@
 		51B2907FDDB52A47CA7C4F82 /* Pods_ShareService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShareService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		751B849B92A95A6955DE8F31 /* Pods-ShareTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareTests.release.xcconfig"; path = "Target Support Files/Pods-ShareTests/Pods-ShareTests.release.xcconfig"; sourceTree = "<group>"; };
 		91B9DDA911A384DCBB3C274F /* Pods_Share.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Share.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97077413214F4E5CB32D7497 /* Pods-ShareUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareUITests.debug.xcconfig"; path = "Target Support Files/Pods-ShareUITests/Pods-ShareUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9DBB9A49D8E2926D9297CD49 /* Pods_ShareTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShareTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FC72B02C94247120A2130A0 /* Pods-Share.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Share.debug.xcconfig"; path = "Target Support Files/Pods-Share/Pods-Share.debug.xcconfig"; sourceTree = "<group>"; };
+		A3E466472D178035A5532911 /* Pods-ShareUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareUITests.release.xcconfig"; path = "Target Support Files/Pods-ShareUITests/Pods-ShareUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C71430BEAD7F28528F6B46EE /* Pods-ShareServiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareServiceTests.release.xcconfig"; path = "Target Support Files/Pods-ShareServiceTests/Pods-ShareServiceTests.release.xcconfig"; sourceTree = "<group>"; };
+		C9A625F42AA44A0FE24AF157 /* Pods_ShareUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShareUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0368BDFDB8337735553C85C /* Pods-ShareTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareTests.debug.xcconfig"; path = "Target Support Files/Pods-ShareTests/Pods-ShareTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F346C28732C799A811AC99FD /* Pods_ShareUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShareUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F55A415ABFA263D13EDFE74A /* Pods-ShareUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareUI.release.xcconfig"; path = "Target Support Files/Pods-ShareUI/Pods-ShareUI.release.xcconfig"; sourceTree = "<group>"; };
@@ -225,6 +241,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D0959DC23D4385D00EA2161 /* ShareService.framework in Frameworks */,
 				0185E49CD58BA890AEE6D7AC /* Pods_ShareUI.framework in Frameworks */,
 				2D2BBBCF23CC9BE90052394B /* Common.framework in Frameworks */,
 			);
@@ -235,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DD429AF23CC9A0100544117 /* ShareUI.framework in Frameworks */,
+				76C1121D8A381DBC25AB9D65 /* Pods_ShareUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +289,7 @@
 		2D2BBBF123CC9DDD0052394B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2D0959E623D4436F00EA2161 /* Post.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -473,6 +492,7 @@
 				51B2907FDDB52A47CA7C4F82 /* Pods_ShareService.framework */,
 				096351F5888DB00AEF7D8851 /* Pods_ShareServiceTests.framework */,
 				F346C28732C799A811AC99FD /* Pods_ShareUI.framework */,
+				C9A625F42AA44A0FE24AF157 /* Pods_ShareUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -490,6 +510,8 @@
 				C71430BEAD7F28528F6B46EE /* Pods-ShareServiceTests.release.xcconfig */,
 				51183A91F70FFF7352697081 /* Pods-ShareUI.debug.xcconfig */,
 				F55A415ABFA263D13EDFE74A /* Pods-ShareUI.release.xcconfig */,
+				97077413214F4E5CB32D7497 /* Pods-ShareUITests.debug.xcconfig */,
+				A3E466472D178035A5532911 /* Pods-ShareUITests.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../Pods;
@@ -620,6 +642,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				2D0959DF23D4385D00EA2161 /* PBXTargetDependency */,
 			);
 			name = ShareUI;
 			productName = ShareUI;
@@ -630,6 +653,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2DD429BA23CC9A0100544117 /* Build configuration list for PBXNativeTarget "ShareUITests" */;
 			buildPhases = (
+				71595224471B63E59F425A1E /* [CP] Check Pods Manifest.lock */,
 				2DD429AA23CC9A0100544117 /* Sources */,
 				2DD429AB23CC9A0100544117 /* Frameworks */,
 				2DD429AC23CC9A0100544117 /* Resources */,
@@ -807,6 +831,28 @@
 			shellPath = /bin/sh;
 			shellScript = "cd \"${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\"\nif [[ -d \"Frameworks\" ]]; then \n    rm -fr Frameworks\nfi\n";
 		};
+		71595224471B63E59F425A1E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShareUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7DA0C5240E599A71C8EF540F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -898,6 +944,7 @@
 				2D2BBBFD23CC9F420052394B /* ShareRemoteDataSource.swift in Sources */,
 				2D2BBC0123CC9F730052394B /* Share.swift in Sources */,
 				2D2BBBFF23CC9F520052394B /* ShareAPI.swift in Sources */,
+				2D0959E723D4436F00EA2161 /* Post.swift in Sources */,
 				2D2BBBF323CC9DFF0052394B /* ShareService.swift in Sources */,
 				2D2BBBF823CC9F100052394B /* ShareDataSource.swift in Sources */,
 				2D2BBC1F23CCBC670052394B /* ShareServiceInjector.swift in Sources */,
@@ -941,6 +988,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2D0959DF23D4385D00EA2161 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2DD4298923CC99D900544117 /* ShareService */;
+			targetProxy = 2D0959DE23D4385D00EA2161 /* PBXContainerItemProxy */;
+		};
 		2D2BBBD923CC9C050052394B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 2DD4298923CC99D900544117 /* ShareService */;
@@ -1339,6 +1391,7 @@
 		};
 		2DD429BB23CC9A0100544117 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97077413214F4E5CB32D7497 /* Pods-ShareUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1359,6 +1412,7 @@
 		};
 		2DD429BC23CC9A0100544117 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3E466472D178035A5532911 /* Pods-ShareUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
