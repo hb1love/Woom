@@ -10,6 +10,12 @@
 		06F4DDF266FFD20F33EC754C /* Pods_UmTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96F4CA84705EAEF317369F65 /* Pods_UmTests.framework */; };
 		2D01332D23CA113D003C3DCA /* ApplicationInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D01332C23CA113D003C3DCA /* ApplicationInjector.swift */; };
 		2D01332F23CA1156003C3DCA /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D01332E23CA1156003C3DCA /* ApplicationCoordinator.swift */; };
+		2D095A8023D497D000EA2161 /* AccountUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D095A7D23D497D000EA2161 /* AccountUI.framework */; };
+		2D095A8123D497D000EA2161 /* AccountUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D095A7D23D497D000EA2161 /* AccountUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2D095A8223D497D000EA2161 /* AuthService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D095A7E23D497D000EA2161 /* AuthService.framework */; };
+		2D095A8323D497D000EA2161 /* AuthService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D095A7E23D497D000EA2161 /* AuthService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2D095A8423D497D000EA2161 /* UserService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D095A7F23D497D000EA2161 /* UserService.framework */; };
+		2D095A8523D497D000EA2161 /* UserService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D095A7F23D497D000EA2161 /* UserService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2D13D3AE23C648A8001C91C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D13D3AD23C648A8001C91C2 /* AppDelegate.swift */; };
 		2D13D3B223C648A8001C91C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D13D3B123C648A8001C91C2 /* ViewController.swift */; };
 		2D13D3B523C648A8001C91C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D13D3B323C648A8001C91C2 /* Main.storyboard */; };
@@ -56,9 +62,12 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				2D095A8523D497D000EA2161 /* UserService.framework in Embed Frameworks */,
 				2D2BBC2823CCC0AF0052394B /* ShareService.framework in Embed Frameworks */,
+				2D095A8123D497D000EA2161 /* AccountUI.framework in Embed Frameworks */,
 				2D13D44C23C64A96001C91C2 /* Chat.framework in Embed Frameworks */,
 				2DD4294723CC98A900544117 /* Share.framework in Embed Frameworks */,
+				2D095A8323D497D000EA2161 /* AuthService.framework in Embed Frameworks */,
 				2DD4297323CC995A00544117 /* Account.framework in Embed Frameworks */,
 				2D2BBC2A23CCC0AF0052394B /* ShareUI.framework in Embed Frameworks */,
 				2D13D3F523C649A4001C91C2 /* Common.framework in Embed Frameworks */,
@@ -72,6 +81,9 @@
 		2D01332C23CA113D003C3DCA /* ApplicationInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationInjector.swift; sourceTree = "<group>"; };
 		2D01332E23CA1156003C3DCA /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		2D01333023CA1A1B003C3DCA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2D095A7D23D497D000EA2161 /* AccountUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AccountUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D095A7E23D497D000EA2161 /* AuthService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AuthService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D095A7F23D497D000EA2161 /* UserService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UserService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D13D3AA23C648A8001C91C2 /* Um.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Um.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D13D3AD23C648A8001C91C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D13D3B123C648A8001C91C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,7 +122,10 @@
 			files = (
 				2D2BBC2923CCC0AF0052394B /* ShareUI.framework in Frameworks */,
 				2D2BBC2723CCC0AF0052394B /* ShareService.framework in Frameworks */,
+				2D095A8023D497D000EA2161 /* AccountUI.framework in Frameworks */,
 				2DD4297223CC995A00544117 /* Account.framework in Frameworks */,
+				2D095A8223D497D000EA2161 /* AuthService.framework in Frameworks */,
+				2D095A8423D497D000EA2161 /* UserService.framework in Frameworks */,
 				2D13D3F423C649A4001C91C2 /* Common.framework in Frameworks */,
 				2D13D44B23C64A96001C91C2 /* Chat.framework in Frameworks */,
 				2DD4294623CC98A900544117 /* Share.framework in Frameworks */,
@@ -274,6 +289,9 @@
 		334D72B85F7C7216195B9731 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2D095A7D23D497D000EA2161 /* AccountUI.framework */,
+				2D095A7E23D497D000EA2161 /* AuthService.framework */,
+				2D095A7F23D497D000EA2161 /* UserService.framework */,
 				2D2BBC2523CCC0AE0052394B /* ShareService.framework */,
 				2D2BBC2623CCC0AF0052394B /* ShareUI.framework */,
 				2DD4297123CC995A00544117 /* Account.framework */,

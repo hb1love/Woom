@@ -6,20 +6,18 @@
 //  Copyright © 2020 depromeet. All rights reserved.
 //
 
+import AuthService
+
 public protocol ShareServiceConfiguration {
   static var baseUrl: String { get }
   static var shareServiceDependency: ShareServiceDependency { get }
 }
 
 public struct ShareServiceDependency {
-//  public let authPlugin: AuthPlugin
-//
-//  public init(authPlugin: AuthPlugin) {
-//    self.authPlugin = authPlugin
-//  }
+  let authPlugin: AuthPlugin
 
-  public init() {
-
+  public init(authPlugin: AuthPlugin) {
+    self.authPlugin = authPlugin
   }
 }
 
@@ -31,7 +29,9 @@ public final class ShareServiceInjector {
     return ShareService(
       share: ShareRepository(
         remote: ShareRemoteDataSource(
-          networking: ShareNetworking()
+          networking: ShareNetworking(
+            plugins: [config.shareServiceDependency.authPlugin]
+          )
         )
       )
     )

@@ -11,6 +11,8 @@
 		2D0959DC23D4385D00EA2161 /* ShareService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD4298A23CC99D900544117 /* ShareService.framework */; };
 		2D0959DD23D4385D00EA2161 /* ShareService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD4298A23CC99D900544117 /* ShareService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2D0959E723D4436F00EA2161 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0959E623D4436F00EA2161 /* Post.swift */; };
+		2D095A9923D4AEF700EA2161 /* AuthService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D095A9823D4AEF700EA2161 /* AuthService.framework */; };
+		2D095A9A23D4AEF700EA2161 /* AuthService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D095A9823D4AEF700EA2161 /* AuthService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2D2BBBCF23CC9BE90052394B /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2BBBCE23CC9BE90052394B /* Common.framework */; };
 		2D2BBBD023CC9BE90052394B /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2BBBCE23CC9BE90052394B /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2D2BBBD323CC9BEF0052394B /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2BBBD223CC9BEF0052394B /* Common.framework */; };
@@ -118,6 +120,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				2D095A9A23D4AEF700EA2161 /* AuthService.framework in Embed Frameworks */,
 				2D2BBBD423CC9BEF0052394B /* Common.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -142,6 +145,7 @@
 		08AAC813F756F47074605D70 /* Pods-ShareService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareService.release.xcconfig"; path = "Target Support Files/Pods-ShareService/Pods-ShareService.release.xcconfig"; sourceTree = "<group>"; };
 		096351F5888DB00AEF7D8851 /* Pods_ShareServiceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShareServiceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D0959E623D4436F00EA2161 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		2D095A9823D4AEF700EA2161 /* AuthService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AuthService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D2BBBCE23CC9BE90052394B /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D2BBBD223CC9BEF0052394B /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D2BBBF223CC9DFF0052394B /* ShareService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareService.swift; sourceTree = "<group>"; };
@@ -224,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32D3AE32332AD1067F8711BB /* Pods_ShareService.framework in Frameworks */,
+				2D095A9923D4AEF700EA2161 /* AuthService.framework in Frameworks */,
 				2D2BBBD323CC9BEF0052394B /* Common.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +489,7 @@
 		66F69A02DD2E6330C975C242 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2D095A9823D4AEF700EA2161 /* AuthService.framework */,
 				2D2BBBD223CC9BEF0052394B /* Common.framework */,
 				2D2BBBCE23CC9BE90052394B /* Common.framework */,
 				2DD4294823CC98D500544117 /* Common.framework */,

@@ -107,6 +107,39 @@ target 'Account' do
   end
 end
 
+target 'AccountUI' do
+  project 'Account/Account'
+  common
+  rx
+  ui
+
+  target 'AccountUITests' do
+    inherit! :search_paths
+  end
+end
+
+target 'AuthService' do
+  project 'Account/Account'
+  common
+  rx
+  networking
+
+  target 'AuthServiceTests' do
+    inherit! :search_paths
+  end
+end
+
+target 'UserService' do
+  project 'Account/Account'
+  common
+  rx
+  networking
+
+  target 'UserServiceTests' do
+    inherit! :search_paths
+  end
+end
+
 target 'Common' do
   project 'Common/Common'
   common

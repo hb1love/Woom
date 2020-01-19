@@ -8,6 +8,8 @@
 
 import UIKit
 import Common
+import AuthService
+import UserService
 import ShareUI
 import ShareService
 
@@ -20,6 +22,8 @@ enum ServiceType: String, CaseIterable {
 
 struct ApplicationConfiguration:
   ShareUIConfiguration,
+  AuthServiceConfiguration,
+  UserServiceConfiguration,
   ShareServiceConfiguration {
 
   static let root: UINavigationController = {
@@ -35,6 +39,14 @@ struct ApplicationConfiguration:
     moduleFactory: MainModuleFactory(serviceMap: serviceMap)
   )
 
+  static let authPlugin = AuthPlugin(authUseCase: authUseCase)
+
+  static let authUseCase = AuthServiceInjector.resolve(
+    with: ApplicationConfiguration.self
+  )
+  static let userUseCase = UserServiceInjector.resolve(
+    with: ApplicationConfiguration.self
+  )
   static let shareCoordinatorFactory = ShareUIInjector.resolve(
     with: ApplicationConfiguration.self
   )
@@ -50,14 +62,27 @@ struct ApplicationConfiguration:
   }()
 
 
-  // MARK: - ShareServiceConfiguration
+  // MARK: - Serivce Common
 
   static let baseUrl: String = {
     return "http://test.team4.ryulth.com/"
   }()
 
-  static let shareServiceDependency: ShareServiceDependency = {
-    return ShareServiceDependency()
+  // MARK: - AuthServiceConfiguration
+
+  static let authServiceDependency: AuthServiceDependency = {
+    return AuthServiceDependency()
   }()
 
+  // MARK: - UserServiceConfiguration
+
+  static let userServiceDependency: UserServiceDependency = {
+    return UserServiceDependency(authPlugin: authPlugin)
+  }()
+
+  // MARK: - ShareServiceConfiguration
+
+  static let shareServiceDependency: ShareServiceDependency = {
+    return ShareServiceDependency(authPlugin: authPlugin)
+  }()
 }
