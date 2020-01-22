@@ -15,7 +15,7 @@ public final class AccountCoordinatorFactory: AccountCoordinatorFactoryType {
     self.moduleFactory = moduleFactory
   }
 
-  public func makeMyPageCoordinator(router: Routable) -> MyPageCoordinatorOutput & Coordinator {
+  public func makeMyPageCoordinator(router: Routable) -> RootCoordinator & MyPageCoordinatorOutput {
     return MyPageCoordinator(
       coordinatorFactory: self,
       moduleFactory: moduleFactory,

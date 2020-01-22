@@ -38,8 +38,14 @@ public final class MyPageCoordinator: BaseCoordinator, MyPageCoordinatorOutput, 
 
   private func showMyPage() {
     let myPageModule = moduleFactory.makeMyPageModule()
+    myPageModule.didLogout = {
 
+    }
     router.setRoot(myPageModule)
+  }
+
+  private func runLoginFlow() {
+    
   }
 
 //  private func showWelcome() {

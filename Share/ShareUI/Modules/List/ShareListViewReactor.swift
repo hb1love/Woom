@@ -19,7 +19,7 @@ public final class ShareListViewReactor: Reactor {
   }
 
   public let initialState: State
-  public let shareUseCase: ShareUseCase
+  private let shareUseCase: ShareUseCase
 
   public init(shareUseCase: ShareUseCase) {
     self.initialState = State()

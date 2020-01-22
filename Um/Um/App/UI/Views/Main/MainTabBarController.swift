@@ -34,7 +34,11 @@ final class MainTabBarController: UITabBarController {
         let tabBarItem = UITabBarItem()
         tabBarItem.title = service.rawValue
         switch service {
-        case .home:
+        case .share:
+          tabBarItem.image = UIImage(named: "ic_bottom_nav_project_inactive")
+          tabBarItem.selectedImage = UIImage(named: "ic_bottom_nav_project_active")!
+            .withRenderingMode(.alwaysOriginal)
+        case .mypage:
           tabBarItem.image = UIImage(named: "ic_bottom_nav_project_inactive")
           tabBarItem.selectedImage = UIImage(named: "ic_bottom_nav_project_active")!
             .withRenderingMode(.alwaysOriginal)

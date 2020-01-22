@@ -33,6 +33,7 @@
 		2D75328523D42BE000E94D78 /* Shaking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D75327A23D42BE000E94D78 /* Shaking.swift */; };
 		2D75328623D42BE000E94D78 /* Pulsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D75327B23D42BE000E94D78 /* Pulsing.swift */; };
 		2D7795D223CCD9C8005B84A9 /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7795D123CCD9C8005B84A9 /* RootCoordinator.swift */; };
+		2D7EC45723D5F62C00D4C775 /* Also.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7EC45623D5F62C00D4C775 /* Also.swift */; };
 		2F85605774E66C3F87F7C034 /* Pods_CommonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0908EA7CCB176F760B2A8C69 /* Pods_CommonTests.framework */; };
 		7546560B8D779D6F582A1B6B /* Pods_Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9CE4BA7C05ABE333EEFFE4D /* Pods_Common.framework */; };
 /* End PBXBuildFile section */
@@ -78,6 +79,7 @@
 		2D75327A23D42BE000E94D78 /* Shaking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shaking.swift; sourceTree = "<group>"; };
 		2D75327B23D42BE000E94D78 /* Pulsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pulsing.swift; sourceTree = "<group>"; };
 		2D7795D123CCD9C8005B84A9 /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
+		2D7EC45623D5F62C00D4C775 /* Also.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Also.swift; sourceTree = "<group>"; };
 		7941F0A67997E3927C3B58DD /* Pods-Common.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Common.debug.xcconfig"; path = "Target Support Files/Pods-Common/Pods-Common.debug.xcconfig"; sourceTree = "<group>"; };
 		7CBB943B94BACD627743DE7B /* Pods-CommonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonTests.debug.xcconfig"; path = "Target Support Files/Pods-CommonTests/Pods-CommonTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8F177B9C1233F9301D82476B /* Pods-CommonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonTests.release.xcconfig"; path = "Target Support Files/Pods-CommonTests/Pods-CommonTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				2D75327923D42BE000E94D78 /* Animations */,
+				2D7EC45523D5F5F800D4C775 /* Scope */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -255,6 +258,14 @@
 				2D75327B23D42BE000E94D78 /* Pulsing.swift */,
 			);
 			path = Animations;
+			sourceTree = "<group>";
+		};
+		2D7EC45523D5F5F800D4C775 /* Scope */ = {
+			isa = PBXGroup;
+			children = (
+				2D7EC45623D5F62C00D4C775 /* Also.swift */,
+			);
+			path = Scope;
 			sourceTree = "<group>";
 		};
 		3676691B0447DF746077A7A2 /* Frameworks */ = {
@@ -476,6 +487,7 @@
 				2D7795D223CCD9C8005B84A9 /* RootCoordinator.swift in Sources */,
 				2D75328123D42BE000E94D78 /* UIViewExtension.swift in Sources */,
 				2D0959E523D43B0F00EA2161 /* UmError.swift in Sources */,
+				2D7EC45723D5F62C00D4C775 /* Also.swift in Sources */,
 				2D2BBBE623CC9CAA0052394B /* BaseCoordinator.swift in Sources */,
 				2D75327F23D42BE000E94D78 /* UIViewControllerExtension.swift in Sources */,
 				2D2BBBE023CC9C310052394B /* Logger.swift in Sources */,

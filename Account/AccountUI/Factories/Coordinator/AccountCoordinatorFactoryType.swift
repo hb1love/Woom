@@ -10,5 +10,5 @@ import Common
 
 public protocol AccountCoordinatorFactoryType {
   func makeMyPageCoordinator(router: Routable) ->
-    Coordinator & MyPageCoordinatorOutput
+    RootCoordinator & MyPageCoordinatorOutput
 }

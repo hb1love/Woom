@@ -22,6 +22,12 @@ public final class AccountModuleFactory
   }
 
   public func makeMyPageModule() -> MyPageViewController {
-    return MyPageViewController()
+    let myPageViewReactor = MyPageViewReactor(
+      authUseCase: authUseCase,
+      userUseCase: userUseCase
+    )
+    let myPageViewController = MyPageViewController()
+    myPageViewController.reactor = myPageViewReactor
+    return myPageViewController
   }
 }
