@@ -82,7 +82,6 @@ final class FloatingTabBar: BaseView {
   }
 
   func refreshTabBar(index: Int) {
-
     for button in tabButtons where button.item.tag != 2 {
       if button.item.tag == index {
         button.button.tintColor = UIColor(named: "tab_active")

@@ -23,8 +23,12 @@ public extension UIViewController {
     return instantiateControllerInStoryboard(storyboard, identifier: identifier)
   }
   
-  class func controllerFromStoryboard(_ identifier: String) -> Self {
-    return controllerInStoryboard(UIStoryboard(name: identifier, bundle: nil), identifier: nameOfClass)
+  class func controllerFromStoryboard(_ identifier: String, bundleId: String? = nil) -> Self {
+    var bundle: Bundle?
+    if let identifier = bundleId {
+      bundle = Bundle(identifier: identifier)
+    }
+    return controllerInStoryboard(UIStoryboard(name: identifier, bundle: bundle), identifier: nameOfClass)
   }
 }
 

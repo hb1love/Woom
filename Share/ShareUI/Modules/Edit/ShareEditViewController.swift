@@ -8,7 +8,16 @@
 
 import UIKit
 import Common
+import ReactorKit
 
-public final class ShareEditViewController: UIViewController {
+public final class ShareEditViewController: BaseViewController, View {
 
+  public override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    self.navigationController?.setNavigationBarHidden(true, animated: false)
+  }
+
+  public func bind(reactor: ShareEditViewReactor) {
+
+  }
 }

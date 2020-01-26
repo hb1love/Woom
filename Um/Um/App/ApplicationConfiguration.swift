@@ -38,12 +38,13 @@ struct ApplicationConfiguration:
   static let serviceMap: [ServiceType: RootCoordinator]
     = [.share: shareCoordinatorFactory.makeListCoordinator(router: Router(rootController: root)),
        .search: accountCoordinatorFactory.makeMyPageCoordinator(router: Router(rootController: root)),
-       .write: accountCoordinatorFactory.makeMyPageCoordinator(router: Router(rootController: root)),
+       .write: shareCoordinatorFactory.makeEditCoordinator(router: Router(rootController: root)),
        .chat: accountCoordinatorFactory.makeMyPageCoordinator(router: Router(rootController: root)),
        .mypage: accountCoordinatorFactory.makeMyPageCoordinator(router: Router(rootController: root))]
 
   static let mainCoordinatorFactory = MainCoordinatorFactory(
-    moduleFactory: MainModuleFactory(serviceMap: serviceMap)
+    mainModuleFactory: MainModuleFactory(serviceMap: serviceMap),
+    shareModuleFactory: shareModuleFactory
   )
 
   static let authPlugin = AuthPlugin(authUseCase: authUseCase)
@@ -57,13 +58,15 @@ struct ApplicationConfiguration:
   static let userUseCase = UserServiceInjector.resolve(
     with: ApplicationConfiguration.self
   )
-  static let shareCoordinatorFactory = ShareUIInjector.resolve(
+  static let shareUI = ShareUIInjector.resolve(
     with: ApplicationConfiguration.self
   )
   static let shareUseCase = ShareServiceInjector.resolve(
     with: ApplicationConfiguration.self
   )
 
+  static let shareCoordinatorFactory = shareUI.0
+  static let shareModuleFactory = shareUI.1
 
   // MARK: - AccountUIConfiguration
 
@@ -81,7 +84,7 @@ struct ApplicationConfiguration:
   }()
 
 
-  // MARK: - Serivce Common
+  // MARK: - Common ServiceConfiguration
 
   static let baseUrl: String = {
     return "http://test.team4.ryulth.com/"

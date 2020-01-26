@@ -30,6 +30,8 @@ final class MainTabBarController: UITabBarController {
 
   // MARK: - Properties
 
+  var onNewPost: (() -> Void)?
+
   var serviceMap = [ServiceType: RootCoordinator]()
   var serviceViews = [UIViewController]()
 
@@ -57,19 +59,24 @@ final class MainTabBarController: UITabBarController {
         tabBarItem.title = service.rawValue
         switch service {
         case .share:
-          tabBarItem.image = UIImage(named: "tab_home_active")?.withRenderingMode(.alwaysTemplate)
+          tabBarItem.image = UIImage(named: "tab_home_active")?
+            .withRenderingMode(.alwaysTemplate)
           tabBarItem.tag = 0
         case .search:
-          tabBarItem.image = UIImage(named: "tab_search_inactive")?.withRenderingMode(.alwaysTemplate)
+          tabBarItem.image = UIImage(named: "tab_search_inactive")?
+            .withRenderingMode(.alwaysTemplate)
           tabBarItem.tag = 1
         case .write:
-          tabBarItem.image = UIImage(named: "tab_write_inactive")?.withRenderingMode(.alwaysOriginal)
+          tabBarItem.image = UIImage(named: "tab_write_inactive")?
+            .withRenderingMode(.alwaysOriginal)
           tabBarItem.tag = 2
         case .chat:
-          tabBarItem.image = UIImage(named: "tab_chat_inactive")?.withRenderingMode(.alwaysTemplate)
+          tabBarItem.image = UIImage(named: "tab_chat_inactive")?
+            .withRenderingMode(.alwaysTemplate)
           tabBarItem.tag = 3
         case .mypage:
-          tabBarItem.image = UIImage(named: "tab_mypage_inactive")?.withRenderingMode(.alwaysTemplate)
+          tabBarItem.image = UIImage(named: "tab_mypage_inactive")?
+            .withRenderingMode(.alwaysTemplate)
           tabBarItem.tag = 4
         }
         let navigationController = coordinator.rootViewController
@@ -122,8 +129,12 @@ final class MainTabBarController: UITabBarController {
 extension MainTabBarController: FloatingTabBarDelegate {
   func didTap(button: FloatingTabButton, at index: Int) {
     if let viewControllers = self.viewControllers {
-      self.selectedViewController = viewControllers[index]
-      floatingTabBar.refreshTabBar(index: index)
+      if index == 2 {
+        onNewPost?()
+      } else {
+        self.selectedViewController = viewControllers[index]
+        floatingTabBar.refreshTabBar(index: index)
+      }
     }
   }
 }

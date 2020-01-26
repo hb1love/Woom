@@ -32,12 +32,12 @@ public struct ShareUIDependency {
 public class ShareUIInjector {
   public static func resolve(
     with config: ShareUIConfiguration.Type
-  ) -> ShareCoordinatorFactoryProtocol {
+  ) -> (ShareCoordinatorFactoryProtocol, ShareEditModuleFactoryType) {
     let shareUseCase = config.shareUIDependency.shareUseCase
-    return ShareCoordinatorFactory(
-      moduleFactory: ShareModuleFactory(
-        shareUseCase: shareUseCase
-      )
+    let factory = ShareModuleFactory(shareUseCase: shareUseCase)
+    return (
+      coordinatorFactory: ShareCoordinatorFactory(moduleFactory: factory),
+      moduleFactory: factory
     )
   }
 }

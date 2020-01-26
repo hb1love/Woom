@@ -20,7 +20,12 @@ public final class ShareModuleFactory
   }
 
   public func makeShareEditModule() -> ShareEditViewController {
-    return ShareEditViewController()
+    let shareEditViewReactor = ShareEditViewReactor(
+      shareUseCase: shareUseCase
+    )
+    let shareEditViewController = ShareEditViewController.controllerFromStoryboard("ShareEdit", bundleId: "com.depromeet.um.shareui")
+    shareEditViewController.reactor = shareEditViewReactor
+    return shareEditViewController
   }
 
   public func makeShareListModule() -> ShareListViewController {
