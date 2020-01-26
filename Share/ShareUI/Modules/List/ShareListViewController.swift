@@ -16,7 +16,7 @@ public final class ShareListViewController: BaseViewController, View {
     super.viewDidLoad()
 
     let a = UIView()
-    a.backgroundColor = .blue
+//    a.backgroundColor = .blue
     a.frame = view.frame
     view.addSubview(a)
   }
