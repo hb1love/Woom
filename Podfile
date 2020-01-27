@@ -21,6 +21,7 @@ def rx
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'RxCodable'
+  pod 'RxDataSources'
   pod 'RxGesture'
 end
 

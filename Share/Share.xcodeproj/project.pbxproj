@@ -11,6 +11,16 @@
 		2D087D7823DDE6F8006AA5E7 /* ShareEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D087D7723DDE6F8006AA5E7 /* ShareEdit.storyboard */; };
 		2D087D7B23DDE90A006AA5E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D087D7A23DDE90A006AA5E7 /* Assets.xcassets */; };
 		2D087D7D23DDEDF4006AA5E7 /* ShareEditViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D087D7C23DDEDF4006AA5E7 /* ShareEditViewReactor.swift */; };
+		2D087D7F23DE0E77006AA5E7 /* ShareList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D087D7E23DE0E77006AA5E7 /* ShareList.storyboard */; };
+		2D087D8623DEAC0F006AA5E7 /* ShareListViewSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D087D8523DEAC0F006AA5E7 /* ShareListViewSection.swift */; };
+		2D087D8823DEB023006AA5E7 /* HotTalentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D087D8723DEB023006AA5E7 /* HotTalentsCell.swift */; };
+		2D087D8A23DEB0C3006AA5E7 /* RecommendCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D087D8923DEB0C3006AA5E7 /* RecommendCategoryCell.swift */; };
+		2D087D8C23DEB0F2006AA5E7 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D087D8B23DEB0F2006AA5E7 /* PostCell.swift */; };
+		2D087D8E23DEB23C006AA5E7 /* HotTalentsCellReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D087D8D23DEB23C006AA5E7 /* HotTalentsCellReactor.swift */; };
+		2D087D9023DEB318006AA5E7 /* RecommendCategoryCellReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D087D8F23DEB318006AA5E7 /* RecommendCategoryCellReactor.swift */; };
+		2D087D9223DEB364006AA5E7 /* PostCellReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D087D9123DEB364006AA5E7 /* PostCellReactor.swift */; };
+		2D087D9423DEC860006AA5E7 /* ProfileThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D087D9323DEC860006AA5E7 /* ProfileThumbnailView.swift */; };
+		2D087D9623DED220006AA5E7 /* PostView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D087D9523DED220006AA5E7 /* PostView.xib */; };
 		2D0959DC23D4385D00EA2161 /* ShareService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD4298A23CC99D900544117 /* ShareService.framework */; };
 		2D0959DD23D4385D00EA2161 /* ShareService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD4298A23CC99D900544117 /* ShareService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2D0959E723D4436F00EA2161 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0959E623D4436F00EA2161 /* Post.swift */; };
@@ -156,6 +166,16 @@
 		2D087D7723DDE6F8006AA5E7 /* ShareEdit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShareEdit.storyboard; sourceTree = "<group>"; };
 		2D087D7A23DDE90A006AA5E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D087D7C23DDEDF4006AA5E7 /* ShareEditViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareEditViewReactor.swift; sourceTree = "<group>"; };
+		2D087D7E23DE0E77006AA5E7 /* ShareList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShareList.storyboard; sourceTree = "<group>"; };
+		2D087D8523DEAC0F006AA5E7 /* ShareListViewSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareListViewSection.swift; sourceTree = "<group>"; };
+		2D087D8723DEB023006AA5E7 /* HotTalentsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotTalentsCell.swift; sourceTree = "<group>"; };
+		2D087D8923DEB0C3006AA5E7 /* RecommendCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCategoryCell.swift; sourceTree = "<group>"; };
+		2D087D8B23DEB0F2006AA5E7 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		2D087D8D23DEB23C006AA5E7 /* HotTalentsCellReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotTalentsCellReactor.swift; sourceTree = "<group>"; };
+		2D087D8F23DEB318006AA5E7 /* RecommendCategoryCellReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCategoryCellReactor.swift; sourceTree = "<group>"; };
+		2D087D9123DEB364006AA5E7 /* PostCellReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCellReactor.swift; sourceTree = "<group>"; };
+		2D087D9323DEC860006AA5E7 /* ProfileThumbnailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileThumbnailView.swift; sourceTree = "<group>"; };
+		2D087D9523DED220006AA5E7 /* PostView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostView.xib; sourceTree = "<group>"; };
 		2D0959E623D4436F00EA2161 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		2D095A9823D4AEF700EA2161 /* AuthService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AuthService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D095AA323D4B9AA00EA2161 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
@@ -294,10 +314,33 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		2D087D8323DEA857006AA5E7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2D087D8723DEB023006AA5E7 /* HotTalentsCell.swift */,
+				2D087D8D23DEB23C006AA5E7 /* HotTalentsCellReactor.swift */,
+				2D087D8923DEB0C3006AA5E7 /* RecommendCategoryCell.swift */,
+				2D087D8F23DEB318006AA5E7 /* RecommendCategoryCellReactor.swift */,
+				2D087D8B23DEB0F2006AA5E7 /* PostCell.swift */,
+				2D087D9123DEB364006AA5E7 /* PostCellReactor.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		2D087D8423DEA874006AA5E7 /* Section */ = {
+			isa = PBXGroup;
+			children = (
+				2D087D8523DEAC0F006AA5E7 /* ShareListViewSection.swift */,
+			);
+			path = Section;
+			sourceTree = "<group>";
+		};
 		2D095AA223D4B93700EA2161 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				2D087D9323DEC860006AA5E7 /* ProfileThumbnailView.swift */,
 				2D095AA323D4B9AA00EA2161 /* PostView.swift */,
+				2D087D9523DED220006AA5E7 /* PostView.xib */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -386,8 +429,11 @@
 		2D2BBC0423CCA4AD0052394B /* List */ = {
 			isa = PBXGroup;
 			children = (
+				2D087D8423DEA874006AA5E7 /* Section */,
+				2D087D8323DEA857006AA5E7 /* Cell */,
 				2D2BBC0623CCA4C10052394B /* ShareListViewController.swift */,
 				2D095AA523D4BB4200EA2161 /* ShareListViewReactor.swift */,
+				2D087D7E23DE0E77006AA5E7 /* ShareList.storyboard */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -818,6 +864,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D087D7B23DDE90A006AA5E7 /* Assets.xcassets in Resources */,
+				2D087D7F23DE0E77006AA5E7 /* ShareList.storyboard in Resources */,
+				2D087D9623DED220006AA5E7 /* PostView.xib in Resources */,
 				2D087D7823DDE6F8006AA5E7 /* ShareEdit.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1027,18 +1075,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D087D8C23DEB0F2006AA5E7 /* PostCell.swift in Sources */,
 				2D2BBC0B23CCA4FC0052394B /* ShareEditViewController.swift in Sources */,
 				2D2BBC2423CCBEF40052394B /* ShareUIInjector.swift in Sources */,
 				2D2BBC0F23CCA5DC0052394B /* ShareCoordinatorFactoryProtocol.swift in Sources */,
 				2D095AA623D4BB4200EA2161 /* ShareListViewReactor.swift in Sources */,
+				2D087D8823DEB023006AA5E7 /* HotTalentsCell.swift in Sources */,
+				2D087D8623DEAC0F006AA5E7 /* ShareListViewSection.swift in Sources */,
+				2D087D9023DEB318006AA5E7 /* RecommendCategoryCellReactor.swift in Sources */,
 				2D2BBC1D23CCAA9A0052394B /* ShareListCoordinator.swift in Sources */,
 				2D2BBC0723CCA4C10052394B /* ShareListViewController.swift in Sources */,
 				2D2BBC0D23CCA5AE0052394B /* ShareCoordinatorFactory.swift in Sources */,
+				2D087D9423DEC860006AA5E7 /* ProfileThumbnailView.swift in Sources */,
+				2D087D8E23DEB23C006AA5E7 /* HotTalentsCellReactor.swift in Sources */,
 				2D2BBC1B23CCA8240052394B /* ShareModuleFactory.swift in Sources */,
 				2D2BBC1723CCA7FF0052394B /* ShareEditModuleFactoryType.swift in Sources */,
+				2D087D9223DEB364006AA5E7 /* PostCellReactor.swift in Sources */,
 				2D2BBC1223CCA68A0052394B /* ShareEditCoordinator.swift in Sources */,
 				2D087D7D23DDEDF4006AA5E7 /* ShareEditViewReactor.swift in Sources */,
 				2D2BBC1923CCA8130052394B /* ShareListModuleFactoryType.swift in Sources */,
+				2D087D8A23DEB0C3006AA5E7 /* RecommendCategoryCell.swift in Sources */,
 				2D095AA423D4B9AA00EA2161 /* PostView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

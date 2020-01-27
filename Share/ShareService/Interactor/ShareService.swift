@@ -21,6 +21,7 @@ public final class ShareService: ShareUseCase {
   }
 
   public func feeds() -> Single<[Post]> {
-    share.feeds()
+    return .just([Post(name: "영어회화 배우고 싶어요"), Post(name: "하이이이이이")])
+//    share.feeds()
   }
 }
