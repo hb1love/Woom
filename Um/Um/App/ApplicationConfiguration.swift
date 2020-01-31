@@ -80,7 +80,10 @@ struct ApplicationConfiguration:
   // MARK: - ShareUIConfiguration
 
   static let shareUIDependency: ShareUIDependency = {
-    return ShareUIDependency(shareUseCase: shareUseCase)
+    return ShareUIDependency(
+      shareUseCase: shareUseCase,
+      userUseCase: userUseCase
+    )
   }()
 
 

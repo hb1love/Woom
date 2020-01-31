@@ -10,7 +10,7 @@ import Common
 import RxSwift
 
 public protocol ShareUseCase {
-  func feeds() -> Single<[Post]>
+  func hotPosts() -> Single<[Post]>
 }
 
 public final class ShareService: ShareUseCase {
@@ -21,7 +21,7 @@ public final class ShareService: ShareUseCase {
     self.share = share
   }
 
-  public func feeds() -> Single<[Post]> {
-    .just(Post.mock)
+  public func hotPosts() -> Single<[Post]> {
+    .just(Post.mock.shuffled() + Post.mock.shuffled() + Post.mock.shuffled() + Post.mock.shuffled())
   }
 }

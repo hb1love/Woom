@@ -61,6 +61,9 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (6.4.0):
     - GoogleUtilities/Logger
+  - Kingfisher (5.13.0):
+    - Kingfisher/Core (= 5.13.0)
+  - Kingfisher/Core (5.13.0)
   - Moya (13.0.1):
     - Moya/Core (= 13.0.1)
   - Moya/Core (13.0.1):
@@ -103,6 +106,7 @@ DEPENDENCIES:
   - Alamofire
   - Firebase/Analytics
   - Firebase/Core
+  - Kingfisher
   - Moya
   - Moya/RxSwift
   - ReactorKit
@@ -130,6 +134,7 @@ SPEC REPOS:
     - GoogleDataTransport
     - GoogleDataTransportCCTSupport
     - GoogleUtilities
+    - Kingfisher
     - Moya
     - nanopb
     - ReactorKit
@@ -156,6 +161,7 @@ SPEC CHECKSUMS:
   GoogleDataTransport: 8e9b210c97d55fbff306cc5468ff91b9cb32dcf5
   GoogleDataTransportCCTSupport: 202d7cdf9c4a7d81a2bb7f7e7e1ba6faa421b1f2
   GoogleUtilities: 29bd0d8f850efbd28cff6d99e8b7da1f8d236bcf
+  Kingfisher: 0d334cada987fcddbe9b5cec516406e1ee9d4748
   Moya: f4a4b80ff2f8a4ffc208dfb31cd91636622fee6e
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   ReactorKit: 8be57f0527ad1ac2963cd5c338274a46a01e57a3
@@ -169,6 +175,6 @@ SPEC CHECKSUMS:
   SwiftyBeaver: f9a9aba96a6a6166e21682377804d728b0d20b95
   Umbrella: d5b508a0efea3c50f4764ad96035d08eafee26bc
 
-PODFILE CHECKSUM: 129b24ecf6d40377605e0b654354d98d54236625
+PODFILE CHECKSUM: 610bd780de713ccf500de022a71e44c2d4d6782c
 
 COCOAPODS: 1.8.4

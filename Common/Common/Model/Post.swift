@@ -9,6 +9,7 @@
 public struct Post: Codable {
   public var id: String?
   public var author: Member?
+  public var title: String?
   public var has: [Skill]?
   public var wanna: [Skill]?
   public var area: String?
@@ -17,7 +18,8 @@ public struct Post: Codable {
   public static let mock = [
     Post(
       id: "1",
-      author: Member.mock,
+      author: Member.mock.randomElement(),
+      title: "웹개발 속성으로 알려주실분!",
       has: [.photoshop],
       wanna: [.frontent],
       area: "강남 어딘가",
@@ -25,7 +27,8 @@ public struct Post: Codable {
     ),
     Post(
       id: "2",
-      author: Member.mock,
+      author: Member.mock.randomElement(),
+      title: "Kotlin, Spring 원해요 :3",
       has: [.app],
       wanna: [.backend],
       area: "성남 야탑",
@@ -33,11 +36,12 @@ public struct Post: Codable {
     ),
     Post(
       id: "3",
-      author: Member.mock,
+      author: Member.mock.randomElement(),
+      title: "이 시국에 중국어 배우고 싶습니다.",
       has: [.english],
       wanna: [.chinese],
       area: "공덕? 협의 가능 ㅎ",
-      description: "이 시국에 중국어 배우고 싶습니다."
+      description: "한국인이면 좋겠어요."
     )
   ]
 }

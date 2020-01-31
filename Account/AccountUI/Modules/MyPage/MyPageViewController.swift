@@ -31,7 +31,7 @@ public final class MyPageViewController: BaseViewController, StoryboardView {
     logoutButton = UIButton().also {
       $0.backgroundColor = .gray
       $0.setTitle("로그아웃", for: .normal)
-      view.addSubview($0)
+//      view.addSubview($0)
     }
   }
 

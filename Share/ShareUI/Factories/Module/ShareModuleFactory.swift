@@ -8,15 +8,18 @@
 
 import Common
 import ShareService
+import UserService
 
 public final class ShareModuleFactory
   : ShareEditModuleFactoryType
   , ShareListModuleFactoryType {
 
   private let shareUseCase: ShareUseCase
+  private let userUseCase: UserUseCase
 
-  public init(shareUseCase: ShareUseCase) {
+  public init(shareUseCase: ShareUseCase, userUseCase: UserUseCase) {
     self.shareUseCase = shareUseCase
+    self.userUseCase = userUseCase
   }
 
   public func makeShareEditModule() -> ShareEditViewController {
@@ -33,7 +36,8 @@ public final class ShareModuleFactory
 
   public func makeShareListModule() -> ShareListViewController {
     let shareListViewReactor = ShareListViewReactor(
-      shareUseCase: shareUseCase
+      shareUseCase: shareUseCase,
+      userUseCase: userUseCase
     )
     let shareListViewController = ShareListViewController.controllerFromStoryboard(
       "ShareList",
