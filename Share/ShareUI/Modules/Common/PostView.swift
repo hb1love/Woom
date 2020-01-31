@@ -26,10 +26,15 @@ final class PostView: BaseView {
 
   // MARK: - Properties
 
-  var post: Post?
+  var post: Post? {
+    didSet {
+      
+    }
+  }
 
   override func setupSubviews() {
     profileThumbnailView = ProfileThumbnailView().also {
+      $0.backgroundColor = .gray
       addSubview($0)
     }
   }

@@ -6,6 +6,7 @@
 //  Copyright © 2020 depromeet. All rights reserved.
 //
 
+import Common
 import ShareService
 import RxSwift
 import ReactorKit
@@ -24,7 +25,7 @@ public final class ShareListViewReactor: Reactor {
 
   public struct State {
     var isRefreshing: Bool = false
-    var sections: [ShareListViewSection] = [.hotTalent([])]
+    var sections: [ShareListViewSection] = [.hotTalents([])]
   }
 
   public let initialState: State
@@ -71,12 +72,12 @@ public final class ShareListViewReactor: Reactor {
 
       case .setFeeds(let posts):
         let sectionItems = self.postSectionItems(with: posts)
-        state.sections = [.hotPost(sectionItems)]
+        state.sections = [.hotTalents([]), .recommendCategories([]), .hotPosts(sectionItems)]
         return state
 
       case .appendFeeds(let posts):
         let sectionItems = state.sections[0].items + self.postSectionItems(with: posts)
-        state.sections = [.hotPost(sectionItems)]
+        state.sections = [.hotPosts(sectionItems)]
         return state
     }
   }

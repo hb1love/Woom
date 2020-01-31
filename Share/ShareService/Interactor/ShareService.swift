@@ -6,6 +6,7 @@
 //  Copyright © 2020 depromeet. All rights reserved.
 //
 
+import Common
 import RxSwift
 
 public protocol ShareUseCase {
@@ -21,7 +22,6 @@ public final class ShareService: ShareUseCase {
   }
 
   public func feeds() -> Single<[Post]> {
-    return .just([Post(name: "영어회화 배우고 싶어요"), Post(name: "하이이이이이")])
-//    share.feeds()
+    .just(Post.mock)
   }
 }

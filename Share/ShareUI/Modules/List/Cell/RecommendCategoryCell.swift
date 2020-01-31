@@ -10,7 +10,7 @@ import UIKit
 import Common
 import ReactorKit
 
-final class RecommendCategoryCell: BaseTableViewCell {
+final class RecommendCategoryCell: BaseCollectionViewCell {
 
   func bind(reactor: RecommendCategoryCellReactor) {
 

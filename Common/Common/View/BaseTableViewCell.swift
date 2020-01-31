@@ -1,5 +1,5 @@
 //
-//  BaseTableView.swift
+//  BaseTableViewCell.swift
 //  Common
 //
 //  Created by hb1love on 2020/01/20.

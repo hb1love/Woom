@@ -11,9 +11,15 @@ import Common
 import ReactorKit
 import SnapKit
 
-final class PostCell: BaseTableViewCell, View {
+final class PostCell: BaseCollectionViewCell, View {
+
+  // MARK: - Subviews
 
   var postView: PostView!
+
+  // MARK: - Properties
+
+  static var defaultHeight = 78.f
 
   override func setupSubviews() {
     super.setupSubviews()

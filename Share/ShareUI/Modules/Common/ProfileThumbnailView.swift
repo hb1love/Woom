@@ -12,7 +12,17 @@ import SnapKit
 
 final class ProfileThumbnailView: BaseView {
 
+  // MARK: - Subviews
+
   var profileImage: UIImageView!
+
+  // MARK: - Properties
+
+  var imageUrl: String? {
+    didSet {
+      
+    }
+  }
 
   override func setupSubviews() {
     profileImage = UIImageView().also {

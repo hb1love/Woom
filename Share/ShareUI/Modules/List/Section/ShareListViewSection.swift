@@ -9,25 +9,25 @@
 import RxDataSources
 
 enum ShareListViewSection {
-  case hotTalent([ShareListViewSectionItem])
-  case recommendCategory([ShareListViewSectionItem])
-  case hotPost([ShareListViewSectionItem])
+  case hotTalents([ShareListViewSectionItem])
+  case recommendCategories([ShareListViewSectionItem])
+  case hotPosts([ShareListViewSectionItem])
 }
 
 extension ShareListViewSection: SectionModelType {
   var items: [ShareListViewSectionItem] {
     switch self {
-    case .hotTalent(let items): return items
-    case .recommendCategory(let items): return items
-    case .hotPost(let items): return items
+    case .hotTalents(let items): return items
+    case .recommendCategories(let items): return items
+    case .hotPosts(let items): return items
     }
   }
 
   init(original: ShareListViewSection, items: [ShareListViewSectionItem]) {
     switch original {
-    case .hotTalent: self = .hotTalent(items)
-    case .recommendCategory: self = .recommendCategory(items)
-    case .hotPost: self = .hotPost(items)
+    case .hotTalents: self = .hotTalents(items)
+    case .recommendCategories: self = .recommendCategories(items)
+    case .hotPosts: self = .hotPosts(items)
     }
   }
 }

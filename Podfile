@@ -28,6 +28,7 @@ end
 def ui
   pod 'ReactorKit'
   pod 'SnapKit'
+  pod 'Kingfisher'
 end
 
 def networking

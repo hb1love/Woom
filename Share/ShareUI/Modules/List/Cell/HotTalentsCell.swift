@@ -10,7 +10,7 @@ import UIKit
 import Common
 import ReactorKit
 
-final class HotTalentsCell: BaseTableViewCell, View {
+final class HotTalentsCell: BaseCollectionViewCell, View {
 
   func bind(reactor: HotTalentsCellReactor) {
     
