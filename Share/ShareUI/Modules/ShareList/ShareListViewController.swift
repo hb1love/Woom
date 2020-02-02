@@ -21,6 +21,8 @@ public final class ShareListViewController: BaseViewController, StoryboardView {
 
   // MARK: - Properties
 
+  var changeTabBar: ((Bool) -> Void)?
+
   private lazy var dataSource = RxCollectionViewSectionedReloadDataSource<ShareListViewSection>(
     configureCell: { dataSource, collectionView, indexPath, sectionItem in
       switch sectionItem {
@@ -146,5 +148,12 @@ extension ShareListViewController: UICollectionViewDelegate, UICollectionViewDel
     case .hotPosts:
       return CGSize(width: collectionView.frame.width, height: PostCell.defaultHeight)
     }
+  }
+}
+
+extension ShareListViewController: UIScrollViewDelegate {
+  public func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    let hidden = scrollView.panGestureRecognizer.translation(in: scrollView).y < 0
+    changeTabBar?(hidden)
   }
 }
