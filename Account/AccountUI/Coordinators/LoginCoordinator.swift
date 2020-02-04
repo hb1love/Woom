@@ -16,14 +16,14 @@ public protocol LoginCoordinatorOutput: AnyObject {
 public final class LoginCoordinator: BaseCoordinator, LoginCoordinatorOutput {
 
   private let coordinatorFactory: AccountCoordinatorFactoryProtocol
-  private let moduleFactory: MyPageModuleFactoryType
+  private let moduleFactory: LoginModuleFactoryType
   private let router: Routable
 
   public var finishFlow: (() -> Void)?
 
   init(
     coordinatorFactory: AccountCoordinatorFactoryProtocol,
-    moduleFactory: MyPageModuleFactoryType,
+    moduleFactory: LoginModuleFactoryType,
     router: Routable
     ) {
     self.coordinatorFactory = coordinatorFactory
@@ -32,15 +32,15 @@ public final class LoginCoordinator: BaseCoordinator, LoginCoordinatorOutput {
   }
 
   public override func start() {
-    showMyPage()
+    showLogin()
   }
 
-  private func showMyPage() {
-    let myPageModule = moduleFactory.makeMyPageModule()
-    myPageModule.didLogout = {
-
-    }
-    router.setRoot(myPageModule)
+  private func showLogin() {
+    let loginModule = moduleFactory.makeLoginModule()
+//    myPageModule.didLogout = {
+//
+//    }
+    router.setRoot(loginModule)
   }
 
   private func runLoginFlow() {

@@ -43,6 +43,10 @@ public final class LoginViewController: BaseViewController, StoryboardView {
   }
 
   public func bind(reactor: LoginViewReactor) {
+//    rx.viewWillAppear
+//      .map { true }
+//      .bind(to: navigationController!.navigationBar.rx.isHidden)
+//      .disposed(by: disposeBag)
 //    logoutButton.rx.tap
 //      .subscribe(onNext: { [weak self] in
 //        self?.didLogout?()

@@ -18,10 +18,6 @@ open class BaseViewController: UIViewController {
     }
   }
 
-  public override var preferredStatusBarStyle: UIStatusBarStyle {
-    return .lightContent
-  }
-
   open override func viewDidLoad() {
     setupSubviews()
 

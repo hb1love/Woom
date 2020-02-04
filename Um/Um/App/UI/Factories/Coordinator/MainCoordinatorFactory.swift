@@ -8,6 +8,7 @@
 
 import Common
 import ShareUI
+import AccountUI
 
 final class MainCoordinatorFactory: MainCoordinatorFactoryProtocol {
   private let mainModuleFactory: MainModuleFactoryType

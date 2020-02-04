@@ -13,7 +13,7 @@ import UserService
 public final class AccountModuleFactory
   : LaunchModuleFactoryType
   , LoginModuleFactoryType
-, MyPageModuleFactoryType {
+  , MyPageModuleFactoryType {
 
   private let authUseCase: AuthUseCase
   private let userUseCase: UserUseCase

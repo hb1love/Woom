@@ -12,17 +12,21 @@ import ShareUI
 
 var isLaunched = false
 var isAuthorized = false
+var needToAuthorize = false
 
 enum LaunchInstructor {
   case launch, auth, main
 
   static func configure(
     isLaunched: Bool = isLaunched,
-    isAuthorized: Bool = isAuthorized
-    ) -> LaunchInstructor {
-    switch (isLaunched, isAuthorized) {
-    case (false, _): return .launch
-    case (true, _): return .main
+    isAuthorized: Bool = isAuthorized,
+    needToAuthorize: Bool = needToAuthorize
+  ) -> LaunchInstructor {
+    switch (isLaunched, isAuthorized, needToAuthorize) {
+    case (false, _, _): return .launch
+    case (_, true, _): return .main
+    case (_, _, false): return .main
+    case (_, _, true): return .auth
     }
   }
 }
@@ -85,7 +89,8 @@ final class ApplicationCoordinator: BaseCoordinator {
   private func runMainFlow() {
     let coordinator = mainCoordinatorFactory.makeMainCoordinator(router: router)
     coordinator.isAuthorized = isAuthorized
-    coordinator.finishFlow = { [weak self, weak coordinator] in
+    coordinator.finishFlow = { [weak self, weak coordinator] needAuthorize in
+      needToAuthorize = needAuthorize
       self?.start()
       self?.removeDependency(coordinator)
     }

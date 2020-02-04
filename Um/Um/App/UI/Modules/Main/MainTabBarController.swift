@@ -40,6 +40,7 @@ final class MainTabBarController: UITabBarController {
   // MARK: - Flow handler
 
   var onNewPost: (() -> Void)?
+  var onSignUp: (() -> Void)?
 
   // MARK: - Properties
 
@@ -177,6 +178,6 @@ extension MainTabBarController: FloatingTabBarDelegate {
 
 extension MainTabBarController: LoginTabBarDelegate {
   func didTap() {
-    
+    onSignUp?()
   }
 }

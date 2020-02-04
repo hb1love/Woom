@@ -94,11 +94,10 @@ final class FloatingTabBar: BaseView {
   }
 }
 
-class FloatingTabButton: BaseView {
+class FloatingTabButton: BaseView, Bouncing {
 
   var roundView: UIView!
   var button: UIButton!
-
   var item: UITabBarItem!
 
   init(tabBarItem: UITabBarItem) {
@@ -133,5 +132,20 @@ class FloatingTabButton: BaseView {
       $0.centerX.centerY.equalToSuperview()
       $0.width.height.equalTo(24)
     }
+  }
+
+  override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    super.touchesBegan(touches, with: event)
+    bounce(true, scaledBy: 0.86)
+  }
+
+  override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+    super.touchesEnded(touches, with: event)
+    bounce(false, scaledBy: 0.86)
+  }
+
+  override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+    super.touchesCancelled(touches, with: event)
+    bounce(false, scaledBy: 0.86)
   }
 }

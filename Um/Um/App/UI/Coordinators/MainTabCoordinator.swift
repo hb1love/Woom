@@ -14,7 +14,7 @@ public protocol MainTabCoordinatorInput: AnyObject {
 }
 
 public protocol MainTabCoordinatorOutput: AnyObject {
-  var finishFlow: (() -> Void)? { get set }
+  var finishFlow: ((_ needToAuthorize: Bool) -> Void)? { get set }
 }
 
 final class MainTabCoordinator: BaseCoordinator, MainTabCoordinatorInput, MainTabCoordinatorOutput {
@@ -24,7 +24,7 @@ final class MainTabCoordinator: BaseCoordinator, MainTabCoordinatorInput, MainTa
   private let router: Routable
 
   public var isAuthorized: Bool?
-  public var finishFlow: (() -> Void)?
+  public var finishFlow: ((Bool) -> Void)?
 
   init(
     mainModuleFactory: MainModuleFactoryType,
@@ -45,7 +45,10 @@ final class MainTabCoordinator: BaseCoordinator, MainTabCoordinatorInput, MainTa
     mainTabModule.onNewPost = { [weak self] in
       self?.showEdit()
     }
-    
+    mainTabModule.onSignUp = { [weak self] in
+      self?.router.dismiss()
+      self?.finishFlow?(true)
+    }
     router.setRoot(mainTabModule)
   }
 
