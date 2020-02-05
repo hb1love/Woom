@@ -53,6 +53,7 @@
 		2D7EC45023D5EAB700D4C775 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7EC44F23D5EAB700D4C775 /* MyPageViewController.swift */; };
 		2D7EC45223D5EEE900D4C775 /* AccountUIInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7EC45123D5EEE900D4C775 /* AccountUIInjector.swift */; };
 		2D7EC45423D5F45200D4C775 /* MyPageViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7EC45323D5F45200D4C775 /* MyPageViewReactor.swift */; };
+		2D8253A123EB05F3007EBDD2 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8253A023EB05F3007EBDD2 /* LoginButton.swift */; };
 		2DD4296023CC990100544117 /* Account.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD4295623CC990100544117 /* Account.framework */; };
 		2DD4296523CC990100544117 /* AccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD4296423CC990100544117 /* AccountTests.swift */; };
 		2DD4296723CC990100544117 /* Account.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DD4295923CC990100544117 /* Account.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -231,6 +232,7 @@
 		2D7EC44F23D5EAB700D4C775 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		2D7EC45123D5EEE900D4C775 /* AccountUIInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountUIInjector.swift; sourceTree = "<group>"; };
 		2D7EC45323D5F45200D4C775 /* MyPageViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewReactor.swift; sourceTree = "<group>"; };
+		2D8253A023EB05F3007EBDD2 /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
 		2DD4295623CC990100544117 /* Account.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Account.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DD4295923CC990100544117 /* Account.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
 		2DD4295A23CC990100544117 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -436,6 +438,7 @@
 				2D7EC43823D5E85400D4C775 /* Factories */,
 				2D7EC43923D5E85D00D4C775 /* Modules */,
 				2DE977BF23E7077D00E1BA98 /* Resources */,
+				2D82539F23EB05C6007EBDD2 /* Views */,
 				2D7EC45123D5EEE900D4C775 /* AccountUIInjector.swift */,
 			);
 			path = AccountUI;
@@ -663,6 +666,14 @@
 				2D7EC45323D5F45200D4C775 /* MyPageViewReactor.swift */,
 			);
 			path = MyPage;
+			sourceTree = "<group>";
+		};
+		2D82539F23EB05C6007EBDD2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2D8253A023EB05F3007EBDD2 /* LoginButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		2DD4294C23CC990100544117 = {
@@ -1343,6 +1354,7 @@
 				2DE977C323E709DD00E1BA98 /* LaunchViewController.swift in Sources */,
 				2DE977CD23E70F8800E1BA98 /* LoginCoordinator.swift in Sources */,
 				2D7EC44823D5E9AF00D4C775 /* AccountCoordinatorFactoryProtocol.swift in Sources */,
+				2D8253A123EB05F3007EBDD2 /* LoginButton.swift in Sources */,
 				2D7EC44D23D5EA7400D4C775 /* MyPageModuleFactoryType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
