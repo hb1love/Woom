@@ -1,11 +1,14 @@
 //
-//  LoginModuleFactoryType.swift
+//  AuthModuleFactoryType.swift
 //  AccountUI
 //
 //  Created by hb1love on 2020/02/02.
 //  Copyright © 2020 depromeet. All rights reserved.
 //
 
-public protocol LoginModuleFactoryType {
+import Common
+
+public protocol AuthModuleFactoryType {
   func makeLoginModule() -> LoginViewController
+  func makeSignUpModule(authProvider: AuthProvider) -> SignUpViewController
 }

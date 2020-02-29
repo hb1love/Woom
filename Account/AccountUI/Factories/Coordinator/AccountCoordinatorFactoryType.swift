@@ -12,8 +12,8 @@ public protocol AccountCoordinatorFactoryType {
   func makeLaunchCoordinator(router: Routable) ->
     Coordinator & LaunchCoordinatorOutput
 
-  func makeLoginCoordinator(router: Routable) ->
-    Coordinator & LoginCoordinatorOutput
+  func makeAuthCoordinator(router: Routable) ->
+    Coordinator & AuthCoordinatorOutput
 
   func makeMyPageCoordinator(router: Routable) ->
     RootCoordinator & MyPageCoordinatorOutput

@@ -8,6 +8,7 @@ def common
   pod 'SwiftyBeaver'
   pod 'Umbrella'
   pod 'Umbrella/Firebase'
+  pod 'KeychainAccess'
 end
 
 def sdk

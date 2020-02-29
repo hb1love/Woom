@@ -9,21 +9,21 @@
 import UIKit
 import Common
 
-public protocol LoginCoordinatorOutput: AnyObject {
+public protocol AuthCoordinatorOutput: AnyObject {
   var finishFlow: ((_ loggedIn: Bool) -> Void)? { get set }
 }
 
-public final class LoginCoordinator: BaseCoordinator, LoginCoordinatorOutput {
+public final class AuthCoordinator: BaseCoordinator, AuthCoordinatorOutput {
 
   private let coordinatorFactory: AccountCoordinatorFactoryType
-  private let moduleFactory: LoginModuleFactoryType
+  private let moduleFactory: AuthModuleFactoryType
   private let router: Routable
 
   public var finishFlow: ((Bool) -> Void)?
 
   init(
     coordinatorFactory: AccountCoordinatorFactoryType,
-    moduleFactory: LoginModuleFactoryType,
+    moduleFactory: AuthModuleFactoryType,
     router: Routable
     ) {
     self.coordinatorFactory = coordinatorFactory
@@ -37,20 +37,18 @@ public final class LoginCoordinator: BaseCoordinator, LoginCoordinatorOutput {
 
   private func showLogin() {
     let loginModule = moduleFactory.makeLoginModule()
-    loginModule.onFinish = { [weak self] loggedIn, isFirst in
-      guard loggedIn else {
-        self?.finishFlow?(loggedIn)
-        return
-      }
-      if isFirst {
-        self?.showRegister()
-      }
+    loginModule.onFinish = { [weak self] loggedIn in
       self?.finishFlow?(loggedIn)
+    }
+    loginModule.showSignUp = { [weak self] authProvider in
+      self?.showSignUp(authProvider: authProvider)
     }
     router.setRoot(loginModule)
   }
 
-  private func showRegister() {
+  private func showSignUp(authProvider: AuthProvider) {
+    let signUpModule = moduleFactory.makeSignUpModule(authProvider: authProvider)
 
+    router.setRoot(signUpModule)
   }
 }

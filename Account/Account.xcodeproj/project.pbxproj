@@ -54,6 +54,8 @@
 		2D095AAD23D4C6E500EA2161 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D095AAB23D4C6E500EA2161 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2D095AAF23D4C71300EA2161 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D095AAE23D4C71300EA2161 /* Common.framework */; };
 		2D095AB023D4C71300EA2161 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D095AAE23D4C71300EA2161 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2D7D5FAA240ACBAA006D963C /* AuthLocalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7D5FA9240ACBAA006D963C /* AuthLocalRepository.swift */; };
+		2D7D5FAF240AE068006D963C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7D5FAE240AE068006D963C /* SignUpViewController.swift */; };
 		2D7EC43B23D5E8C400D4C775 /* MyPageCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7EC43A23D5E8C400D4C775 /* MyPageCoordinator.swift */; };
 		2D7EC43C23D5E8EF00D4C775 /* AuthService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D095A3123D44AD800EA2161 /* AuthService.framework */; };
 		2D7EC43D23D5E8EF00D4C775 /* AuthService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D095A3123D44AD800EA2161 /* AuthService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -79,8 +81,8 @@
 		2DE977C523E709EF00E1BA98 /* LaunchViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE977C423E709EF00E1BA98 /* LaunchViewReactor.swift */; };
 		2DE977C723E709FA00E1BA98 /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DE977C623E709FA00E1BA98 /* Launch.storyboard */; };
 		2DE977C923E70E3100E1BA98 /* LaunchModuleFactoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE977C823E70E3100E1BA98 /* LaunchModuleFactoryType.swift */; };
-		2DE977CB23E70E7100E1BA98 /* LoginModuleFactoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE977CA23E70E7100E1BA98 /* LoginModuleFactoryType.swift */; };
-		2DE977CD23E70F8800E1BA98 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE977CC23E70F8800E1BA98 /* LoginCoordinator.swift */; };
+		2DE977CB23E70E7100E1BA98 /* AuthModuleFactoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE977CA23E70E7100E1BA98 /* AuthModuleFactoryType.swift */; };
+		2DE977CD23E70F8800E1BA98 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE977CC23E70F8800E1BA98 /* AuthCoordinator.swift */; };
 		2DE977CF23E70F9C00E1BA98 /* LaunchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE977CE23E70F9C00E1BA98 /* LaunchCoordinator.swift */; };
 		3100344AF825D3F5105E50A3 /* Pods_AccountTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A621A0B7E9B458A15EE1C8B1 /* Pods_AccountTests.framework */; };
 		491BEDAF44EB219A663C3EA3 /* Pods_UserService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCDD97A3F1C33E49C7965096 /* Pods_UserService.framework */; };
@@ -249,6 +251,8 @@
 		2D095AA723D4C63900EA2161 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D095AAB23D4C6E500EA2161 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D095AAE23D4C71300EA2161 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D7D5FA9240ACBAA006D963C /* AuthLocalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthLocalRepository.swift; sourceTree = "<group>"; };
+		2D7D5FAE240AE068006D963C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		2D7EC43A23D5E8C400D4C775 /* MyPageCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageCoordinator.swift; sourceTree = "<group>"; };
 		2D7EC44523D5E98E00D4C775 /* AccountCoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCoordinatorFactory.swift; sourceTree = "<group>"; };
 		2D7EC44723D5E9AF00D4C775 /* AccountCoordinatorFactoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCoordinatorFactoryType.swift; sourceTree = "<group>"; };
@@ -272,8 +276,8 @@
 		2DE977C423E709EF00E1BA98 /* LaunchViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewReactor.swift; sourceTree = "<group>"; };
 		2DE977C623E709FA00E1BA98 /* Launch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
 		2DE977C823E70E3100E1BA98 /* LaunchModuleFactoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchModuleFactoryType.swift; sourceTree = "<group>"; };
-		2DE977CA23E70E7100E1BA98 /* LoginModuleFactoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModuleFactoryType.swift; sourceTree = "<group>"; };
-		2DE977CC23E70F8800E1BA98 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		2DE977CA23E70E7100E1BA98 /* AuthModuleFactoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModuleFactoryType.swift; sourceTree = "<group>"; };
+		2DE977CC23E70F8800E1BA98 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
 		2DE977CE23E70F9C00E1BA98 /* LaunchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchCoordinator.swift; sourceTree = "<group>"; };
 		309B2A762A353B2DDE0E2B0C /* Pods_AccountUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AccountUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C08B377BADE278B5238545C /* Pods-UserServiceTests.release(prod).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UserServiceTests.release(prod).xcconfig"; path = "Target Support Files/Pods-UserServiceTests/Pods-UserServiceTests.release(prod).xcconfig"; sourceTree = "<group>"; };
@@ -616,6 +620,7 @@
 		2D095A6B23D44C2400EA2161 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				2D7D5FA8240ACB99006D963C /* Local */,
 				2D095A6C23D44C2800EA2161 /* Remote */,
 				2D095A7223D44E4500EA2161 /* AuthRepository.swift */,
 				2D095A7423D44E7300EA2161 /* AuthDataSource.swift */,
@@ -656,6 +661,22 @@
 			path = Api;
 			sourceTree = "<group>";
 		};
+		2D7D5FA8240ACB99006D963C /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				2D7D5FA9240ACBAA006D963C /* AuthLocalRepository.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		2D7D5FAD240AE053006D963C /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				2D7D5FAE240AE068006D963C /* SignUpViewController.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
 		2D7EC43623D5E82300D4C775 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
@@ -669,7 +690,7 @@
 			isa = PBXGroup;
 			children = (
 				2DE977CE23E70F9C00E1BA98 /* LaunchCoordinator.swift */,
-				2DE977CC23E70F8800E1BA98 /* LoginCoordinator.swift */,
+				2DE977CC23E70F8800E1BA98 /* AuthCoordinator.swift */,
 				2D7EC43A23D5E8C400D4C775 /* MyPageCoordinator.swift */,
 			);
 			path = Coordinators;
@@ -689,6 +710,7 @@
 			children = (
 				2DE977BA23E6FE3400E1BA98 /* Launch */,
 				2DE977B723E6FD3600E1BA98 /* Login */,
+				2D7D5FAD240AE053006D963C /* SignUp */,
 				2D7EC44E23D5EAA800D4C775 /* MyPage */,
 			);
 			path = Modules;
@@ -708,7 +730,7 @@
 			children = (
 				2D7EC44A23D5EA0000D4C775 /* AccountModuleFactory.swift */,
 				2DE977C823E70E3100E1BA98 /* LaunchModuleFactoryType.swift */,
-				2DE977CA23E70E7100E1BA98 /* LoginModuleFactoryType.swift */,
+				2DE977CA23E70E7100E1BA98 /* AuthModuleFactoryType.swift */,
 				2D7EC44C23D5EA7400D4C775 /* MyPageModuleFactoryType.swift */,
 			);
 			path = Module;
@@ -1399,7 +1421,7 @@
 				2DE977C523E709EF00E1BA98 /* LaunchViewReactor.swift in Sources */,
 				2DE977B923E6FD5000E1BA98 /* LoginViewController.swift in Sources */,
 				2D7EC45423D5F45200D4C775 /* MyPageViewReactor.swift in Sources */,
-				2DE977CB23E70E7100E1BA98 /* LoginModuleFactoryType.swift in Sources */,
+				2DE977CB23E70E7100E1BA98 /* AuthModuleFactoryType.swift in Sources */,
 				2D7EC44B23D5EA0000D4C775 /* AccountModuleFactory.swift in Sources */,
 				2D7EC45223D5EEE900D4C775 /* AccountUIInjector.swift in Sources */,
 				2D05E30323F0313B00FC058D /* ProfileCellReactor.swift in Sources */,
@@ -1408,7 +1430,7 @@
 				2D7EC43B23D5E8C400D4C775 /* MyPageCoordinator.swift in Sources */,
 				2D7EC44623D5E98E00D4C775 /* AccountCoordinatorFactory.swift in Sources */,
 				2DE977C323E709DD00E1BA98 /* LaunchViewController.swift in Sources */,
-				2DE977CD23E70F8800E1BA98 /* LoginCoordinator.swift in Sources */,
+				2DE977CD23E70F8800E1BA98 /* AuthCoordinator.swift in Sources */,
 				2D05BF9523F19D2500316406 /* ProfileView.swift in Sources */,
 				2D05BFA523F1BAC400316406 /* Assets+Extension.swift in Sources */,
 				2D7EC44823D5E9AF00D4C775 /* AccountCoordinatorFactoryType.swift in Sources */,
@@ -1417,6 +1439,7 @@
 				2D8253A123EB05F3007EBDD2 /* LoginButton.swift in Sources */,
 				2D7EC44D23D5EA7400D4C775 /* MyPageModuleFactoryType.swift in Sources */,
 				2D05E30523F0321400FC058D /* IntroduceCell.swift in Sources */,
+				2D7D5FAF240AE068006D963C /* SignUpViewController.swift in Sources */,
 				2D05E2FE23F02E9900FC058D /* MyPageViewSection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1433,6 +1456,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D7D5FAA240ACBAA006D963C /* AuthLocalRepository.swift in Sources */,
 				2D095A7123D44D2C00EA2161 /* AuthService.swift in Sources */,
 				2D095A7323D44E4500EA2161 /* AuthRepository.swift in Sources */,
 				2D095A6E23D44C3700EA2161 /* AuthRemoteDataSource.swift in Sources */,

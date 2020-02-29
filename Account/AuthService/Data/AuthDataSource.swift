@@ -6,9 +6,17 @@
 //  Copyright © 2020 depromeet. All rights reserved.
 //
 
+import Common
 import RxSwift
 
-public protocol AuthDataSource {
-  func authorize() -> Single<Void>
+public protocol AuthRemoteDataSource {
+  func register(provider: AuthProvider) -> Single<AuthToken>
+  func login(provider: AuthProvider) -> Single<AuthToken>
   func logout()
+}
+
+public protocol AuthLocalDataSource {
+  func saveToken(authToken: AuthToken) throws
+  func loadToken() -> AuthToken?
+  func deleteToken()
 }

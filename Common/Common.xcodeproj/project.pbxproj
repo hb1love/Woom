@@ -43,6 +43,8 @@
 		2D75328523D42BE000E94D78 /* Shaking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D75327A23D42BE000E94D78 /* Shaking.swift */; };
 		2D75328623D42BE000E94D78 /* Pulsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D75327B23D42BE000E94D78 /* Pulsing.swift */; };
 		2D7795D223CCD9C8005B84A9 /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7795D123CCD9C8005B84A9 /* RootCoordinator.swift */; };
+		2D7D5FA5240AAA57006D963C /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7D5FA4240AAA57006D963C /* AuthProvider.swift */; };
+		2D7D5FA7240AAD68006D963C /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7D5FA6240AAD68006D963C /* Token.swift */; };
 		2D7EC45723D5F62C00D4C775 /* Also.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7EC45623D5F62C00D4C775 /* Also.swift */; };
 		2D8745A023E9A30F006CF795 /* Bouncing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D87459F23E9A30F006CF795 /* Bouncing.swift */; };
 		2D8745A223E9AB8F006CF795 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D8745A123E9AB8F006CF795 /* Sound.swift */; };
@@ -108,6 +110,8 @@
 		2D75327A23D42BE000E94D78 /* Shaking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shaking.swift; sourceTree = "<group>"; };
 		2D75327B23D42BE000E94D78 /* Pulsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pulsing.swift; sourceTree = "<group>"; };
 		2D7795D123CCD9C8005B84A9 /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
+		2D7D5FA4240AAA57006D963C /* AuthProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProvider.swift; sourceTree = "<group>"; };
+		2D7D5FA6240AAD68006D963C /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		2D7EC45623D5F62C00D4C775 /* Also.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Also.swift; sourceTree = "<group>"; };
 		2D87459F23E9A30F006CF795 /* Bouncing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bouncing.swift; sourceTree = "<group>"; };
 		2D8745A123E9AB8F006CF795 /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
@@ -201,6 +205,8 @@
 				2D6F73EF23E466D5005612B7 /* Category.swift */,
 				2D6F73F123E466E8005612B7 /* Skill.swift */,
 				2D6F73F323E4672C005612B7 /* Post.swift */,
+				2D7D5FA4240AAA57006D963C /* AuthProvider.swift */,
+				2D7D5FA6240AAD68006D963C /* Token.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -572,7 +578,9 @@
 				2D095A9D23D4B5AA00EA2161 /* BaseViewController.swift in Sources */,
 				2D095AA123D4B78100EA2161 /* BaseTableViewCell.swift in Sources */,
 				2D75327D23D42BE000E94D78 /* Calendar+Extension.swift in Sources */,
+				2D7D5FA5240AAA57006D963C /* AuthProvider.swift in Sources */,
 				2D75328023D42BE000E94D78 /* UITableView+Cell.swift in Sources */,
+				2D7D5FA7240AAD68006D963C /* Token.swift in Sources */,
 				2D75327E23D42BE000E94D78 /* Int+Transform.swift in Sources */,
 				2D6F73F423E4672C005612B7 /* Post.swift in Sources */,
 				2D6F73F023E466D5005612B7 /* Category.swift in Sources */,

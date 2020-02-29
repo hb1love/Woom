@@ -24,8 +24,8 @@ public final class AccountCoordinatorFactory: AccountCoordinatorFactoryType {
     )
   }
 
-  public func makeLoginCoordinator(router: Routable) -> Coordinator & LoginCoordinatorOutput {
-    return LoginCoordinator(
+  public func makeAuthCoordinator(router: Routable) -> Coordinator & AuthCoordinatorOutput {
+    return AuthCoordinator(
       coordinatorFactory: self,
       moduleFactory: moduleFactory,
       router: router

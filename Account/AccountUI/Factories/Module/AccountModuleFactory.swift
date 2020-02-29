@@ -12,7 +12,7 @@ import UserService
 
 public final class AccountModuleFactory
   : LaunchModuleFactoryType
-  , LoginModuleFactoryType
+  , AuthModuleFactoryType
   , MyPageModuleFactoryType {
 
   private let authUseCase: AuthUseCase
@@ -47,6 +47,14 @@ public final class AccountModuleFactory
     )
     loginViewController.reactor = loginViewReactor
     return loginViewController
+  }
+
+  public func makeSignUpModule(authProvider: AuthProvider) -> SignUpViewController {
+//    let signUpViewReactor =
+
+    let signUpViewController = SignUpViewController()
+
+    return signUpViewController
   }
 
   public func makeMyPageModule() -> MyPageViewController {

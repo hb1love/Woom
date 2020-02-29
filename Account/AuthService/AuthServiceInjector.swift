@@ -25,7 +25,8 @@ public final class AuthServiceInjector {
     AuthServiceConfig.shared = AuthServiceConfig(config)
     return AuthService(
       auth: AuthRepository(
-        remote: AuthRemoteDataSource(
+        local: AuthLocalRepository(),
+        remote: AuthRemoteRepository(
           networking: AuthNetworking()
         )
       )

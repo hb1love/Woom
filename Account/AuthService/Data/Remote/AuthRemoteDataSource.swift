@@ -9,17 +9,23 @@
 import Common
 import RxSwift
 
-final class AuthRemoteDataSource: AuthDataSource {
+final class AuthRemoteRepository: AuthRemoteDataSource {
   private let networking: AuthNetworking
 
   init(networking: AuthNetworking) {
     self.networking = networking
   }
 
-  func authorize() -> Single<Void> {
+  func register(provider: AuthProvider) -> Single<AuthToken> {
     networking
-      .request(.login)
-      .map { _ in }
+      .request(.register(provider: provider))
+      .map(AuthToken.self)
+  }
+
+  func login(provider: AuthProvider) -> Single<AuthToken> {
+    networking
+      .request(.login(provider: provider))
+      .map(AuthToken.self)
   }
 
   func logout() {

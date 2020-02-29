@@ -6,9 +6,15 @@
 //  Copyright © 2020 depromeet. All rights reserved.
 //
 
+import Common
 import RxSwift
 
 public protocol Auth {
-  func authorize() -> Single<Void>
+  func register(provider: AuthProvider) -> Single<AuthToken>
+  func login(provider: AuthProvider) -> Single<AuthToken>
   func logout()
+
+  func saveToken(authToken: AuthToken) throws
+  func loadToken() -> AuthToken?
+  func deleteToken()
 }

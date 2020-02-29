@@ -34,7 +34,8 @@ public final class LoginViewController: BaseViewController, StoryboardView {
 
   // MARK: - Properties
 
-  var onFinish: ((_ loggedIn: Bool, _ isFirst: Bool) -> Void)?
+  var onFinish: ((_ loggedIn: Bool) -> Void)?
+  var showSignUp: ((_ authProvider: AuthProvider) -> Void)?
 
   public override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
     return .portrait
@@ -89,16 +90,16 @@ public final class LoginViewController: BaseViewController, StoryboardView {
   }
 
   func handleKakaoLoginRequest() {
-//    getkakaoSession { [weak self] token in
-//      guard let `self` = self else { return }
-//      guard let token = token else { return }
-//      log.debug("token : " + token)
-//    }
-    self.onFinish?(true, true)
+    getkakaoSession { [weak self] token in
+      guard let `self` = self else { return }
+      guard let token = token else { return }
+      log.debug("token : " + token)
+    }
+//    self.onFinish?(true, true)
   }
 
   func handleNoLoginRequest() {
-    onFinish?(false, false)
+//    onFinish?(false, false)
   }
 }
 
@@ -173,12 +174,26 @@ extension LoginViewController {
     }
 
     session.open { error in
-      guard session.isOpen() else {
+      guard session.isOpen(), let accessToken = session.token?.accessToken else {
         log.debug("Invoked kakao login")
         completion(nil)
         return
       }
-      completion(session.token?.accessToken)
+
+      KOSessionTask.userMeTask { [weak self] (error, me) in
+        if let error = error {
+          log.debug("Failed to fetch kakao profile", error.localizedDescription)
+          return
+        }
+
+        guard let me = me, let id = me.id, let email = me.account?.email else {
+          log.debug("Failed to fetch kakao profile")
+          return
+        }
+
+        let authProvider = AuthProvider.kakao((id: id, accessToken: accessToken, email: email))
+
+      }
     }
   }
 }
